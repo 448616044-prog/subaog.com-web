@@ -89,7 +89,7 @@
         <a href="https://subaog.com/zh-cn/contact.html" class="lang-switch" title="切换到中文" hreflang="zh-CN">
           <span>中文</span><span class="sep">/</span><span class="lang-en">English</span>
         </a>
-        <a href="https://wa.me/message/your-number" class="btn-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a href="https://d.salesmartly.com/fuxikn" class="btn-wa" target="_blank" rel="noopener">💬 Live Chat</a>
       </nav>
     </div>
   </header>
@@ -106,7 +106,7 @@
             <div class="icon">💬</div>
             <div>
               <h4>WhatsApp (fastest)</h4>
-              <p>Most customers get a reply in under 30 minutes during business hours.<br><a href="https://wa.me/message/your-number" target="_blank" rel="noopener">Open WhatsApp chat →</a></p>
+              <p>Most customers get a reply in under 30 minutes during business hours.<br><a href="https://d.salesmartly.com/fuxikn" target="_blank" rel="noopener">Open WhatsApp chat →</a></p>
             </div>
           </div>
           <div class="method">
@@ -134,7 +134,7 @@
 
         <div class="form-card">
           <h2>Request a quote online</h2>
-          <form action="https://formspree.io/f/your-form-id" method="POST" id="quoteForm">
+          <form id="quoteForm">
             <div class="row">
               <div class="field">
                 <label>Your name <span class="req">*</span></label>
@@ -193,11 +193,17 @@
               <textarea name="notes" placeholder="Pickup needed? Fragile items? Time-sensitive? Any customs concerns?"></textarea>
             </div>
             <button type="submit" class="btn-wa">Send quote request</button>
-            <p class="fine">By submitting you agree to be contacted by Subao Global Logistics. We never share your details.</p>
+            <p class="fine">Submitting opens our live chat so a specialist can confirm your details and pricing.</p>
           </form>
         </div>
       </div>
     </div>
   </main>
+  <script>
+    document.getElementById('quoteForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      window.open('https://d.salesmartly.com/fuxikn', '_blank');
+    });
+  </script>
 </body>
 </html>
