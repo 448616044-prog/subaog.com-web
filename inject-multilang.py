@@ -50,14 +50,23 @@ LANGSW_HTML_TPL = """{marker}
 """
 
 
+def _clean(rel: str) -> str:
+    """统一 clean URL：index.html → 目录结尾（不带 index.html）。"""
+    if rel == "index.html":
+        return ""
+    if rel.endswith("/index.html"):
+        return rel[: -len("index.html")]
+    return rel
+
+
 def to_url(rel_to_zh: str) -> str:
-    """把 /zh-cn/foo/bar.html → https://subaog.com/zh-cn/foo/bar.html"""
-    return f"{DOMAIN}/zh-cn/{rel_to_zh}"
+    """把 /zh-cn/foo/bar.html → https://subaog.com/zh-cn/foo/bar.html（clean URL）"""
+    return f"{DOMAIN}/zh-cn/{_clean(rel_to_zh)}"
 
 
 def en_equivalent(rel_to_zh: str) -> str:
-    """把 /zh-cn/foo/bar.html → https://subaog.com/en/foo/bar.html"""
-    return f"{DOMAIN}/en/{rel_to_zh}"
+    """把 /zh-cn/foo/bar.html → https://subaog.com/en/foo/bar.html（clean URL）"""
+    return f"{DOMAIN}/en/{_clean(rel_to_zh)}"
 
 
 def process_html(html: str, rel_path: str) -> str:

@@ -52,7 +52,7 @@ def changefreq_for(rel: str) -> str:
 
 def build_urlset() -> str:
     lines = []
-    today = "2026-08-16"
+    today = "2026-08-17"
 
     # ---- 根选择器页（语言选择）----
     lines.append(f'  <url><loc>{ROOT_URL}</loc><lastmod>{today}</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>')
