@@ -146,7 +146,10 @@
     .card .card-link{display:inline-block;color:var(--primary);font-weight:600;font-size:14px;margin-top:6px}
     .card .card-link:hover{text-decoration:underline}
     /* Route Cards */
-    .route-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .route-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+    @media(max-width:1024px){.route-cards{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){.route-cards{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:480px){.route-cards{grid-template-columns:1fr}}
     .route-card{background:var(--bg-white);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-sm);border:1px solid var(--border);transition:all .3s;text-align:center}
     .route-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--primary)}
     .route-flag{font-size:40px;margin-bottom:12px}
@@ -263,7 +266,7 @@
   <!-- 线路卡片 -->
   <section class="section">
     <div class="container">
-      <div class="section-title"><h2>选择你的出发国家</h2><p>全部线路双清包税，门到门派送</p></div>
+      <div class="section-title"><h2>选择你的出发国家</h2><p>全部线路双清包税，门到门派送｜清单+100元申报手续费｜21kg+起运价</p></div>
       <div class="route-cards">
         <div class="route-card">
           <div class="route-flag">🇺🇸</div>
@@ -286,12 +289,6 @@
           <div class="route-time">⏱ 10-15 工作日</div>
           <a href="/seasia-to-china/malaysia/" class="btn-link">查看详情 →</a>
         </div>
-        <div class="route-card">
-          <div class="route-flag">🇯🇵</div>
-          <h3>日本→中国</h3>
-          <div class="route-price">21kg+ <strong>70元/kg</strong> | 100kg+ <strong>65元/kg</strong></div>
-          <div class="route-time">⏱ 10-15 工作日</div>
-          
         <div class="route-card">
           <div class="route-flag">🇯🇵</div>
           <h3>日本→中国</h3>
@@ -327,6 +324,8 @@
           <div class="route-time">⏱ 10-15 工作日</div>
           <a href="/europe-to-china/" class="btn-link">查看详情 →</a>
         </div>
+      </div>
+      <p style="text-align:center;color:#666;font-size:14px;margin-top:20px">📋 全部线路均含清关服务，<strong>清单+100元申报手续费</strong>，双清包税门到门派送</p>
       </div>
     </div>
   </section>
