@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="applicable-device" content="pc,mobile">
+  <title>材积重量计算器2026 | 体积重 vs 实际重比较 | 速豹国际</title>
+  <meta name="description" content="国际物流材积计算器：输入长宽高自动计算体积重量。物流按实重和体积重取大值计费，提前算好不被多收。">
+  <!-- hreflang:auto:subaog-multilang -->
+<link rel="alternate" hreflang="zh-CN" href="https://subaog.com/zh-cn/tools/volume-calculator.html">
+<link rel="alternate" hreflang="en" href="https://subaog.com/en/tools/volume-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://subaog.com/zh-cn/tools/volume-calculator.html">
+<link rel="canonical" href="https://subaog.com/zh-cn/tools/volume-calculator.html"><!-- canonical:auto:subaog-multilang -->
+  <meta property="og:title" content="材积重量计算器 | 体积重 vs 实际重">
+  <meta property="og:description" content="国际快递材积重量计算工具：输入包裹长宽高和实际重量，即计算计费重量。">
+  <meta property="og:image" content="https://subaog.com/assets/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="lastmod" content="2026-08-07">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"材积重量计算器","url":"https://subaog.com/tools/volume-calculator","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"速豹国际物流","url":"https://subaog.com"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://subaog.com/"},{"@type":"ListItem","position":2,"name":"免费工具","item":"https://subaog.com/tools/"},{"@type":"ListItem","position":3,"name":"材积重量计算器","item":"https://subaog.com/tools/volume-calculator"}]}</script>
+  <style>
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--accent:#E65100;--accent-dark:#CC5200;--green:#00B900;--bg:#F5F7FA;--bg-white:#FFFFFF;--text:#1A1A2E;--text-secondary:#64748B;--border:#E2E8F0;--radius:10px;--radius-lg:16px;--radius-pill:24px;--shadow-sm:0 1px 3px rgba(0,0,0,0.06);--shadow-md:0 4px 16px rgba(0,0,0,0.08);--nav-height:68px}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif;color:var(--text);line-height:1.8;font-size:16px;background:var(--bg)}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    .header{position:fixed;top:0;left:0;right:0;height:var(--nav-height);background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);z-index:1000;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo{font-size:20px;font-weight:700;color:var(--primary)}
+    .nav{display:flex;gap:4px}
+    .nav a{padding:7px 14px;font-size:13px;font-weight:500;color:var(--text-secondary);border-radius:var(--radius-pill)}
+    .nav a:hover{color:var(--primary);background:var(--primary-light)}
+    .nav a.active{color:var(--primary);background:var(--primary-light)}
+    .tool-hero{background:linear-gradient(135deg,#0066CC,#004C99);color:#fff;padding:100px 24px 48px;text-align:center}
+    .tool-hero h1{font-size:clamp(1.4rem,2.5vw,2rem);margin-bottom:8px}
+    .tool-hero .subtitle{opacity:.9;max-width:500px;margin:0 auto}
+    .tool-body{max-width:720px;margin:0 auto;padding:32px 24px 64px}
+    .tool-card{background:var(--bg-white);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-md);border:1px solid var(--border)}
+    .form-group{margin-bottom:16px}
+    .form-group label{display:block;font-size:13px;color:var(--text-secondary);margin-bottom:4px;font-weight:500}
+    .form-group input,.form-group select{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:var(--radius);font-size:15px;font-family:inherit}
+    .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--primary)}
+    .form-row{display:flex;gap:12px}
+    .form-row .form-group{flex:1}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--accent);color:#fff;padding:14px 32px;border-radius:var(--radius-pill);font-weight:600;font-size:16px;transition:all .2s;border:none;cursor:pointer;width:100%}
+    .btn-primary:hover{background:var(--accent-dark)}
+    .result-box{margin-top:20px;padding:20px;background:var(--primary-light);border-radius:var(--radius);text-align:center;display:none}
+    .result-box.show{display:block}
+    .result-box .big-num{font-size:2rem;font-weight:700;color:var(--primary)}
+    .result-box .detail{font-size:13px;color:var(--text-secondary);margin-top:4px}
+    .tool-info{padding:24px 0}
+    .tool-info h2{font-size:1.3rem;color:var(--primary);margin:32px 0 12px}
+    .tool-info p{color:var(--text-secondary);margin:8px 0}
+    .tool-info ul,.tool-info ol{padding-left:24px;color:var(--text-secondary);margin:8px 0}
+    .footer{background:#1A1A2E;color:#fff;padding:48px 24px 24px;margin-top:64px}
+    .footer h4{font-size:13px;color:#ccc;margin-bottom:12px}
+    .footer a,.footer p{display:block;color:#999;font-size:12px;margin-bottom:6px;transition:color .2s}
+    .footer a:hover{color:#fff}
+    @media(max-width:768px){.form-row{flex-direction:column}}
+
+    /* lang-switch (auto-injected by inject-multilang.py) */
+    .lang-switch{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--primary);border:1.5px solid var(--primary-light);border-radius:var(--radius-pill);background:#fff;transition:all .2s;white-space:nowrap;cursor:pointer;text-decoration:none}
+    .lang-switch:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+    .lang-switch .globe{font-size:14px}
+    .lang-switch .sep{color:var(--border);margin:0 2px;font-weight:400}
+    .lang-switch .lang-cn{color:var(--primary)}
+    .lang-switch:hover .lang-cn,.lang-switch:hover .sep{color:#fff}
+    @media(max-width:768px){.lang-switch{width:100%;justify-content:flex-start;padding:10px 16px;border-radius:var(--radius);border-color:var(--border);font-size:14px}}
+
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJGPMS9MOB"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DJGPMS9MOB');
+</script>
+</head>
+<body>
+  <header class="header"><div class="container">
+    <a href="/" class="logo">速豹国际<span style="font-size:11px;color:var(--text-secondary);font-weight:400;margin-left:8px">美国寄中国</span></a>
+    <nav class="nav">
+        <a href="/">首页</a>
+        <a href="/usa-to-china/">美国寄中国</a>
+        <a href="/pricing.html">运费报价</a>
+        <a href="/tools/" class="active">免费工具</a>
+        <a href="/blog/">攻略</a>
+        <a href="/contact.html">咨询</a><!-- lang-switch:auto:subaog-multilang -->
+      <a href="https://subaog.com/en/tools/volume-calculator.html" class="lang-switch" title="Switch to English" hreflang="en">
+        <span class="globe">🌐</span>
+        <span class="lang-cn">中文</span>
+        <span class="sep">/</span>
+        <span>English</span>
+      </a>
+</nav>
+  </div></header>
+  <section class="tool-hero"><div class="container">
+    <h1>材积重量计算器</h1><p class="subtitle">输入长宽高和实际重量，自动比较取大值</p>
+  </div></section>
+  <div class="tool-body">
+    
+        <div class="tool-card">
+          <div class="form-row"><div class="form-group"><label>长 (cm)</label><input type="number" id="len" min="1" placeholder="如：40" value="40"></div><div class="form-group"><label>宽 (cm)</label><input type="number" id="wid" min="1" placeholder="如：30" value="30"></div><div class="form-group"><label>高 (cm)</label><input type="number" id="hei" min="1" placeholder="如：20" value="20"></div></div>
+          <div class="form-row"><div class="form-group"><label>实际重量 (kg)</label><input type="number" id="actualW" min="0.1" step="0.1" placeholder="如：5" value="5"></div><div class="form-group"><label>除数</label><select id="divisor"><option value="5000">÷5000 (空运标准)</option><option value="6000">÷6000 (快递标准)</option></select></div></div>
+          <button class="btn-primary" onclick="calcVol()">计算</button>
+          <div class="result-box" id="result"><div class="big-num" id="charge-w">--</div><div class="detail" id="vol-detail"></div></div>
+        </div>
+        <script>
+        function calcVol(){
+          var l=parseFloat(document.getElementById('len').value)||40;
+          var w=parseFloat(document.getElementById('wid').value)||30;
+          var h=parseFloat(document.getElementById('hei').value)||20;
+          var a=parseFloat(document.getElementById('actualW').value)||5;
+          var d=parseFloat(document.getElementById('divisor').value);
+          var vol=(l*w*h)/d;
+          var charge=Math.max(vol,a);
+          document.getElementById('charge-w').textContent=charge.toFixed(1)+' kg（计费重量）';
+          document.getElementById('vol-detail').textContent='材积重='+(l*w*h/d).toFixed(1)+'kg | 实重='+a+'kg → 取大值';
+          document.getElementById('result').classList.add('show');
+        }
+        </script>
+        <div class="tool-info">
+          <h2>什么是材积重量？</h2>
+          <p>材积重量（体积重量）= 长×宽×高(cm) ÷ 5000（空运）或 ÷6000（快递）。物流公司按「实际重量」和「材积重量」取较大值计费。</p>
+          <p><strong>举例：</strong>一个40×30×20cm的盒子，实际重2kg。材积重=40×30×20÷5000=4.8kg。计费重量取4.8kg而非2kg。</p>
+          <h2>怎么减少材积重？</h2>
+          <p>① 用紧凑包装，减少多余空间 ② 软性物品（衣服）尽量压缩 ③ 分拆大件为多个小包。</p>
+        </div>
+  </div>
+  
+  <footer class="footer">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px">
+      <div><h4>速豹国际物流</h4><p>美国寄中国专线物流专家</p></div>
+      <div><h4>核心服务</h4><a href="/usa-to-china/">美国寄中国</a><a href="/student-luggage/">留学生行李</a><a href="/usa-moving-to-china/">搬家回国</a></div>
+      <div><h4>免费工具</h4><a href="/tools/shipping-calculator">运费计算器</a><a href="/tools/customs-duty-calculator">关税估算器</a><a href="/tools/can-i-ship">能不能寄</a></div>
+      <div><h4>联系我们</h4><p>WhatsApp: 在线咨询</p><p>info@subaog.com</p></div>
+    </div>
+    <div style="text-align:center;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1);font-size:11px;color:#666"><p>&copy; 2026 速豹国际物流 | <a href="/sitemap.xml" style="color:#666">Sitemap</a></p></div>
+  </footer>
+</body></html>
