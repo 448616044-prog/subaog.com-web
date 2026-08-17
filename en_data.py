@@ -18,7 +18,18 @@ COUNTRIES = {
         "subtitle": ("Consolidated shipping from anywhere in the USA to China, with tax-inclusive customs "
                      "clearance and door-to-door delivery in 10–15 working days. Built for students, families "
                      "moving home, and shoppers — 40–60% cheaper than USPS/UPS/FedEx with full tracking."),
-        "cities": [],
+        "cities": [
+            {"en": "Los Angeles", "zh": "洛杉矶"},
+            {"en": "New York", "zh": "纽约"},
+            {"en": "San Francisco", "zh": "旧金山"},
+            {"en": "Chicago", "zh": "芝加哥"},
+            {"en": "Houston", "zh": "休斯顿"},
+            {"en": "Boston", "zh": "波士顿"},
+            {"en": "Seattle", "zh": "西雅图"},
+            {"en": "Dallas", "zh": "达拉斯"},
+            {"en": "Miami", "zh": "迈阿密"},
+            {"en": "Washington DC", "zh": "华盛顿"},
+        ],
         "price_air": "from $10.5/kg (21kg+)",
         "price_sea": "from $6.5/kg (21kg+)",
         "transit": "10–15 working days",

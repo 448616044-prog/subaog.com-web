@@ -133,7 +133,7 @@ def nav_html(active: str, lang_zh: str) -> str:
       <nav class="nav">
         {nav}
         <a href="{lang_zh}" class="lang-switch" hreflang="zh-CN"><span>中文</span><span class="sep">/</span><span class="lang-en">English</span></a>
-        <a href="https://wa.me/message/your-number" class="btn-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a href="https://d.salesmartly.com/fuxikn" class="btn-wa" target="_blank" rel="noopener">💬 Live Chat</a>
       </nav>
     </div>
   </header>"""
@@ -168,7 +168,7 @@ def footer_html() -> str:
       </div>
       <div>
         <h4>Contact</h4>
-        <p>WhatsApp: <a href="https://wa.me/message/your-number">Chat now</a></p>
+        <p>Live Chat: <a href="https://d.salesmartly.com/fuxikn" target="_blank" rel="noopener">Chat now</a></p>
         <p>Email: <a href="mailto:info@subaog.com">info@subaog.com</a></p>
         <p>Hours: Mon–Fri 09:00–21:00 GMT+8</p>
       </div>
