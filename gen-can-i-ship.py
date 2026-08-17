@@ -45,6 +45,35 @@ ITEMS = [
 ]
 
 
+# 通用 FAQ（每个品类页追加，台湾站打法：FAQ 是排 2-5 名的核心）
+COMMON_FAQ_EN = [
+    ("How long does shipping to China take?",
+     "Air freight takes 10–15 working days door-to-door. Sea freight takes 25–35 days."),
+    ("Will I pay customs duty?",
+     "Personal items under RMB 1,000 (about $140) are duty-free. Our tax-inclusive service covers standard duty."),
+    ("What's the cheapest way to ship to China?",
+     "Chinese consolidated shipping is 40–60% cheaper than USPS/FedEx for parcels over 5kg."),
+    ("What documents do I need?",
+     "A simple item description and recipient info. We handle the customs paperwork for you."),
+    ("What if my package is lost or damaged?",
+     "Optional insurance is available. Report any issue within 48 hours of delivery."),
+    ("Can you ship to any city in China?",
+     "Yes — we deliver door-to-door to all major cities in mainland China."),
+    ("Do you offer free pickup?",
+     "Yes — free doorstep pickup across the USA."),
+]
+
+COMMON_FAQ_ZH = [
+    ("寄中国要多久？", "空运10-15工作日门到门，海运25-35天。"),
+    ("会被税吗？免税额多少？", "个人物品人民币1000元以下免税。我们的双清包税服务已含基础关税。"),
+    ("哪个渠道最便宜？", "华人集运比FedEx/UPS便宜40-60%，5kg以上尤其划算。"),
+    ("需要什么文件清关？", "简单物品清单+收件人信息即可，清关手续我们代办。"),
+    ("丢了/破损怎么办？", "可选运输保险。签收后48小时内反馈问题。"),
+    ("能寄到中国任何城市吗？", "可以，中国大陆主要城市门到门派送。"),
+    ("有免费上门取件吗？", "有，全美免费上门取件。"),
+]
+
+
 def gen_en(item):
     slug = item["slug"]
     en = item["en"]
@@ -59,7 +88,7 @@ def gen_en(item):
          f"{en} is taxed at {item['rate']} on value above RMB 1,000 (about $140). Personal-use quantities are often duty-free. Our tax-inclusive service covers standard duty."),
         (f"How should I pack {en.lower()} for shipping?",
          f"Keep {en.lower()} in original packaging, use cushioning, and declare the item accurately to avoid customs delays."),
-    ]
+    ] + COMMON_FAQ_EN
     body = f"""  <section class="hero" style="padding-bottom:48px"><div class="container">
       <h1>Can I Ship {en} to China?</h1>
       <p class="subtitle">{item['note_en']}. Duty rate {item['rate']}.</p>
@@ -92,7 +121,7 @@ def gen_zh(item):
         (f"美国{zh}能寄中国吗？", f"{item['verdict_zh']}。{item['note_zh']}。超出人民币1000元免税额部分按{item['rate']}税率计税。"),
         (f"寄{zh}回国要交多少税？", f"{zh}税率为{item['rate']}，超出人民币1000元免税额部分按此税率计。个人自用数量通常免税。我们的双清包税服务已含基础关税。"),
         (f"{zh}怎么打包寄回国？", f"保留原包装，做好缓冲防压，如实申报品名避免海关延误。"),
-    ]
+    ] + COMMON_FAQ_ZH
     faq_schema_zh = json.dumps({
         "@context": "https://schema.org", "@type": "FAQPage",
         "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]
