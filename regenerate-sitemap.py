@@ -61,6 +61,8 @@ def build_urlset() -> str:
     zh_files = sorted(ZH.rglob("*.html"))
     for f in zh_files:
         rel = f.relative_to(ZH).as_posix()
+        if rel == "404.html":
+            continue  # 排除 404 页面
         # 转 URL：index.html → /zh-cn/foo/；其他 → /zh-cn/foo.html
         if rel == "index.html":
             url = ZH_HOME
@@ -92,6 +94,8 @@ def build_urlset() -> str:
         en_files = sorted(EN.rglob("*.html"))
         for f in en_files:
             rel = f.relative_to(EN).as_posix()
+            if rel == "404.html":
+                continue  # 排除 404 页面
             if rel == "index.html":
                 url = EN_HOME
             elif rel.endswith("/index.html"):
