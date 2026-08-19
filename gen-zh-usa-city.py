@@ -22,6 +22,16 @@ CITIES = [
     {"slug": "dallas", "zh": "达拉斯", "en": "Dallas", "note": "德州新兴华人社区，性价比寄件需求增长快"},
     {"slug": "miami", "zh": "迈阿密", "en": "Miami", "note": "美国东南门户，拉美中转枢纽"},
     {"slug": "washington-dc", "zh": "华盛顿", "en": "Washington DC", "note": "政府与国际机构华人，文件与个人物品寄件为主"},
+    {"slug": "atlanta", "zh": "亚特兰大", "en": "Atlanta", "note": "美东南华人新中心，影视与医疗从业者多，搬家回国需求增长"},
+    {"slug": "denver", "zh": "丹佛", "en": "Denver", "note": "科罗拉多华人社区，商务与个人物品寄件为主"},
+    {"slug": "phoenix", "zh": "凤凰城", "en": "Phoenix", "note": "亚利桑那华人聚集地，气候宜人适合退休华人搬家回国"},
+    {"slug": "san-jose", "zh": "圣何塞", "en": "San Jose", "note": "硅谷核心，科技从业者海归寄件高频"},
+    {"slug": "san-diego", "zh": "圣地亚哥", "en": "San Diego", "note": "加州南部华人圈，与墨西哥接壤的物流枢纽"},
+    {"slug": "portland", "zh": "波特兰", "en": "Portland", "note": "俄勒冈华人社区，海淘与代购寄件需求活跃"},
+    {"slug": "las-vegas", "zh": "拉斯维加斯", "en": "Las Vegas", "note": "内华达华人游客与常住社群，行李寄送需求集中"},
+    {"slug": "austin", "zh": "奥斯汀", "en": "Austin", "note": "德州科技新贵，华人工程师海归与搬家寄件增长快"},
+    {"slug": "philadelphia", "zh": "费城", "en": "Philadelphia", "note": "美东历史名城，大学城密集，留学生行李需求稳定"},
+    {"slug": "detroit", "zh": "底特律", "en": "Detroit", "note": "汽车城，华人工程师与制造业从业者寄件为主"},
 ]
 
 CSS = """:root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--accent:#E65100;--green:#00B900;--bg:#F5F7FA;--bg-white:#FFFFFF;--text:#1A1A2E;--text-secondary:#64748B;--border:#E2E8F0;--radius:10px;--radius-lg:16px;--radius-pill:24px;--nav-height:68px}

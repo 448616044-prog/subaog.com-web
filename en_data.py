@@ -29,6 +29,16 @@ COUNTRIES = {
             {"en": "Dallas", "zh": "达拉斯"},
             {"en": "Miami", "zh": "迈阿密"},
             {"en": "Washington DC", "zh": "华盛顿"},
+            {"en": "Atlanta", "zh": "亚特兰大"},
+            {"en": "Denver", "zh": "丹佛"},
+            {"en": "Phoenix", "zh": "凤凰城"},
+            {"en": "San Jose", "zh": "圣何塞"},
+            {"en": "San Diego", "zh": "圣地亚哥"},
+            {"en": "Portland", "zh": "波特兰"},
+            {"en": "Las Vegas", "zh": "拉斯维加斯"},
+            {"en": "Austin", "zh": "奥斯汀"},
+            {"en": "Philadelphia", "zh": "费城"},
+            {"en": "Detroit", "zh": "底特律"},
         ],
         "price_air": "from $10.5/kg (21kg+)",
         "price_sea": "from $6.5/kg (21kg+)",
@@ -335,10 +345,13 @@ COUNTRIES = {
 US_CITIES = [
     "New York", "Los Angeles", "San Francisco", "Chicago", "Houston", "Boston",
     "Seattle", "Dallas", "Miami", "Washington DC",
+    "Atlanta", "Denver", "Phoenix", "San Jose", "San Diego",
+    "Portland", "Las Vegas", "Austin", "Philadelphia", "Detroit",
 ]
 CN_CITIES = [
     "Beijing", "Shanghai", "Guangzhou", "Shenzhen", "Chengdu", "Hangzhou",
     "Nanjing", "Wuhan", "Tianjin", "Xiamen",
+    "Chongqing", "Suzhou", "Xian", "Qingdao", "Changsha", "Zhengzhou", "Dalian", "Ningbo",
 ]
 
 # ============ 通用英文文案 ============

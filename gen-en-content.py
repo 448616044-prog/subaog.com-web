@@ -200,9 +200,26 @@ def render_page(rel_path: str, title: str, desc: str, body: str, schema_extra: s
             "@type": "ListItem", "position": 2, "name": parts[0].replace("-", " ").title(),
             "item": eu,
         })
-    schema = json.dumps(og) + "\n  " + json.dumps(bc)
+    schema_blocks = [json.dumps(og), json.dumps(bc)]
     if schema_extra:
-        schema += "\n  " + schema_extra
+        # schema_extra 可能含多个 JSON（如 FAQPage + Person），拆成独立 script
+        dec = json.JSONDecoder()
+        idx = 0
+        s = schema_extra
+        while idx < len(s):
+            while idx < len(s) and s[idx] in ' \n\r\t':
+                idx += 1
+            if idx >= len(s):
+                break
+            if s[idx] == '{':
+                try:
+                    o, idx = dec.raw_decode(s, idx)
+                    schema_blocks.append(json.dumps(o, ensure_ascii=False))
+                except Exception:
+                    break
+            else:
+                break
+    schema_html = "\n  ".join(f'<script type="application/ld+json">{b}</script>' for b in schema_blocks)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -223,7 +240,7 @@ def render_page(rel_path: str, title: str, desc: str, body: str, schema_extra: s
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="lastmod" content="2026-08-17">
-  <script type="application/ld+json">{schema}</script>
+  {schema_html}
   <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag('js',new Date());gtag('config','{GA_ID}');</script>
   <style>{CSS}</style>
