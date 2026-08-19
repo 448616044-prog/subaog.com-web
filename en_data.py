@@ -40,8 +40,8 @@ COUNTRIES = {
             {"en": "Philadelphia", "zh": "费城"},
             {"en": "Detroit", "zh": "底特律"},
         ],
-        "price_air": "from $10.5/kg (21kg+)",
-        "price_sea": "from $6.5/kg (21kg+)",
+        "price_air": "from $11/kg (21kg+), $10.4/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
+        "price_sea": "from $3-5/kg (21kg+ — sea freight, ask for quote)",
         "transit": "10–15 working days",
         "features": [
             {"icon": "🛡️", "title": "Tax-inclusive", "desc": "One price covers US pickup, freight, China customs, and final delivery."},
@@ -51,7 +51,7 @@ COUNTRIES = {
         ],
         "faq": [
             ("How much does it cost to ship from the USA to China?",
-             "Air freight starts at about $10.5/kg for shipments over 21kg, and sea freight from $6.5/kg. "
+             "Air freight from $9.5–11/kg for shipments over 21kg, and sea freight from $3–5/kg (luggage line, effective 2026-6-30). "
              "Small parcels (under 2kg) cost $15–30 via USPS-style channels. Final price depends on weight, "
              "volume, and item type — request a free quote for an exact figure."),
             ("How long does USA to China shipping take?",
@@ -88,7 +88,7 @@ COUNTRIES = {
             {"en": "Sapporo", "zh": "札幌"},
             {"en": "Fukuoka", "zh": "福冈"},
         ],
-        "price_air": "from $9/kg (21kg+)",
+        "price_air": "from $9.5/kg (21kg+), $9/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
         "price_sea": "from $5/kg (21kg+)",
         "transit": "7–12 working days",
         "features": [
@@ -127,7 +127,7 @@ COUNTRIES = {
             {"en": "Daejeon", "zh": "大田"},
             {"en": "Gwangju", "zh": "光州"},
         ],
-        "price_air": "from $8/kg (21kg+)",
+        "price_air": "from $9.5/kg (21kg+), $9/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
         "price_sea": "from $4.5/kg (21kg+)",
         "transit": "7–12 working days",
         "features": [
@@ -164,7 +164,7 @@ COUNTRIES = {
             {"en": "Amsterdam", "zh": "阿姆斯特丹"},
             {"en": "Brussels", "zh": "布鲁塞尔"},
         ],
-        "price_air": "from $9.5/kg (21kg+)",
+        "price_air": "from $10.5/kg (21kg+), $9.7/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
         "price_sea": "from $5.5/kg (21kg+)",
         "transit": "10–15 working days",
         "features": [
@@ -199,7 +199,7 @@ COUNTRIES = {
             {"en": "Edmonton", "zh": "埃德蒙顿"},
             {"en": "Ottawa", "zh": "渥太华"},
         ],
-        "price_air": "from $10/kg (21kg+)",
+        "price_air": "from $11/kg (21kg+), $10.4/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
         "price_sea": "from $6/kg (21kg+)",
         "transit": "10–15 working days",
         "features": [
@@ -235,7 +235,7 @@ COUNTRIES = {
             {"en": "Adelaide", "zh": "阿德莱德"},
             {"en": "Gold Coast", "zh": "黄金海岸"},
         ],
-        "price_air": "from $9.5/kg (21kg+)",
+        "price_air": "from $11/kg (21kg+), $10.4/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
         "price_sea": "from $5.5/kg (21kg+)",
         "transit": "10–15 working days",
         "features": [
@@ -263,7 +263,7 @@ COUNTRIES = {
         "subtitle": ("Door-to-door shipping from Singapore and Malaysia to China in 7–12 working days. "
                      "Student luggage, moving home, and shopping — with tax-inclusive customs and free pickup."),
         "cities": [],  # 东南亚用 singapore/malaysia 两个国家 + 场景页，由 gen-en-content-2.py 生成
-        "price_air": "from $8/kg (21kg+)",
+        "price_air": "from $9.5/kg (21kg+), $9/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
         "price_sea": "from $4.5/kg (21kg+)",
         "transit": "7–12 working days",
         "features": [
@@ -291,7 +291,7 @@ COUNTRIES = {
                      "to China door-to-door in 10–15 working days. Free boxes, free pickup, and tax-inclusive "
                      "customs."),
         "cities": [],
-        "price_air": "from $9/kg (21kg+)",
+        "price_air": "from $9.5/kg (21kg+), $9/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
         "price_sea": "from $5/kg (21kg+)",
         "transit": "10–15 working days",
         "features": [
@@ -320,8 +320,8 @@ COUNTRIES = {
         "subtitle": ("Moving home? Ship furniture, appliances and household goods from the USA to China "
                      "door-to-door. Sea freight from 25–35 days with tax-inclusive customs and free pickup."),
         "cities": [],
-        "price_air": "from $10.5/kg (21kg+)",
-        "price_sea": "from $6.5/kg (21kg+)",
+        "price_air": "from $11/kg (21kg+), $10.4/kg (100kg+) — luggage line, tax-inclusive (2026-6-30)",
+        "price_sea": "from $3-5/kg (21kg+ — sea freight, ask for quote)",
         "transit": "Sea 25–35 days",
         "features": [
             {"icon": "🛋️", "title": "Furniture & appliances", "desc": "Large-item handling with care."},
@@ -331,7 +331,7 @@ COUNTRIES = {
         ],
         "faq": [
             ("How much does moving from the USA to China cost?",
-             "Sea freight from about $6.5/kg (21kg+). Large volume moves get better rates. Request a free "
+             "Sea freight from $3–5/kg (21kg+). Large volume moves get better rates — ask for a free "
              "quote with your item list."),
             ("How long does a USA to China move take?",
              "Sea freight takes 25–35 days door-to-door. Air freight (for smaller moves) takes 10–15 days."),

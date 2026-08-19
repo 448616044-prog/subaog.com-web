@@ -120,7 +120,7 @@ gtag('config', 'G-DJGPMS9MOB');
           <button class="btn-primary" onclick="calc()">计算运费</button>
           <div class="result-box" id="result"><div class="big-num" id="price">--</div><div class="detail" id="detail"></div><p style="margin-top:12px;font-size:13px;color:var(--text-secondary)">* 以上为估算，实际以客服确认为准</p></div>
         </div>
-        <script>function calc(){var w=parseFloat(document.getElementById('weight').value)||10;var m=document.getElementById('method').value;var min,max,days;if(m==='air'){min=4.5;max=7.5;days='7-10天'}else if(m==='sea'){min=2;max=4;days='25-35天'}else{min=12;max=25;days='3-5天'};document.getElementById('price').textContent='$'+(w*((min+max)/2)).toFixed(0)+' - $'+(w*max).toFixed(0);document.getElementById('detail').textContent=days+' | '+w+'lb估算';document.getElementById('result').classList.add('show')}</script>
+        <script>function calc(){var w=parseFloat(document.getElementById('weight').value)||21;var m=document.getElementById('method').value;var min,max,days;if(m==='air'){min=4;max=5.5;days='7-10天（行李专线 2026-6-30 起）'}else if(m==='sea'){min=2;max=3.5;days='25-35天'}else{min=12;max=25;days='3-5天'};document.getElementById('price').textContent='$'+(w*((min+max)/2)).toFixed(0)+' - $'+(w*max).toFixed(0);document.getElementById('detail').textContent=days+' | '+w+'lb（行李专线）';document.getElementById('result').classList.add('show')}</script>
         <div class="tool-info">
           <h2>美国寄中国运费是怎么算的？</h2>
           <p>国际运费 = 重量 × 单价 + 附加费（燃油附加、偏远地区、关税）。计费重量取「实际重量」和「材积重量」的较大值。材积重量 = 长×宽×高(cm) ÷ 5000。</p>
