@@ -240,7 +240,19 @@
     .footer .coming-soon{color:#555;font-size:12px;cursor:default}
     .footer-bottom{text-align:center;padding-top:32px;margin-top:32px;border-top:1px solid rgba(255,255,255,0.1);font-size:12px;color:#666}
     .footer-bottom a{color:#999;display:inline}
-  </style>
+  
+  .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .video-card{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
+  .video-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+  .video-thumb{position:relative;cursor:pointer;aspect-ratio:16/9;background:#000}
+  .video-thumb img{width:100%;height:100%;object-fit:cover}
+  .video-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,0,0,.92);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;padding-left:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:transform .15s}
+  .video-thumb:hover .video-play{transform:translate(-50%,-50%) scale(1.1)}
+  .video-info{padding:12px 16px}
+  .video-name{font-size:14px;font-weight:700;color:var(--text)}
+  .video-sub{font-size:12px;color:var(--text-secondary);margin-top:2px}
+</style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "速豹仓库实拍视频", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "VideoObject", "name": "速豹仓库实拍：货物分类作业", "description": "速豹国际物流仓库实拍视频：货物分类作业。展示真实的仓库作业流程，包裹从入库到出库全透明可查。", "thumbnailUrl": "https://i.ytimg.com/vi/DEraXkkT2Fs/hqdefault.jpg", "uploadDate": "2026-08-19", "embedUrl": "https://www.youtube-nocookie.com/embed/DEraXkkT2Fs", "contentUrl": "https://www.youtube.com/watch?v=DEraXkkT2Fs"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "VideoObject", "name": "速豹仓库实拍：包裹装箱出货", "description": "速豹国际物流仓库实拍视频：包裹装箱出货。展示真实的仓库作业流程，包裹从入库到出库全透明可查。", "thumbnailUrl": "https://i.ytimg.com/vi/MlpXMKRhqNk/hqdefault.jpg", "uploadDate": "2026-08-19", "embedUrl": "https://www.youtube-nocookie.com/embed/MlpXMKRhqNk", "contentUrl": "https://www.youtube.com/watch?v=MlpXMKRhqNk"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "VideoObject", "name": "速豹仓库实拍：包裹出货前检查", "description": "速豹国际物流仓库实拍视频：包裹出货前检查。展示真实的仓库作业流程，包裹从入库到出库全透明可查。", "thumbnailUrl": "https://i.ytimg.com/vi/Ara0yCCTc34/hqdefault.jpg", "uploadDate": "2026-08-19", "embedUrl": "https://www.youtube-nocookie.com/embed/Ara0yCCTc34", "contentUrl": "https://www.youtube.com/watch?v=Ara0yCCTc34"}}]}</script>
 </head>
 <body>
   <header class="header">
@@ -285,6 +297,45 @@
 <div class="hero-cta">
         <a href="#calculator" class="btn-primary">📦 免费估算运费</a>
         <a href="/zh-cn/contact.html" class="btn-outline">获取精准报价 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 仓库实拍视频（转化信任） -->
+  <section class="section video-section">
+    <div class="container">
+      <div class="section-title"><h2>速豹仓库实拍 · 你的包裹我们这样处理</h2><p>真实仓库作业画面，全流程透明可查</p></div>
+      <div class="video-grid">
+      <div class="video-card">
+        <div class="video-thumb" data-video="DEraXkkT2Fs" role="button" aria-label="播放视频：货物分类作业">
+          <img src="https://i.ytimg.com/vi/DEraXkkT2Fs/hqdefault.jpg" alt="速豹仓库实拍：货物分类作业" loading="lazy">
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-info">
+          <div class="video-name">📦 货物分类作业</div>
+          <div class="video-sub">速豹国际物流仓库实拍</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb" data-video="MlpXMKRhqNk" role="button" aria-label="播放视频：包裹装箱出货">
+          <img src="https://i.ytimg.com/vi/MlpXMKRhqNk/hqdefault.jpg" alt="速豹仓库实拍：包裹装箱出货" loading="lazy">
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-info">
+          <div class="video-name">📦 包裹装箱出货</div>
+          <div class="video-sub">速豹国际物流仓库实拍</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb" data-video="Ara0yCCTc34" role="button" aria-label="播放视频：包裹出货前检查">
+          <img src="https://i.ytimg.com/vi/Ara0yCCTc34/hqdefault.jpg" alt="速豹仓库实拍：包裹出货前检查" loading="lazy">
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-info">
+          <div class="video-name">📦 包裹出货前检查</div>
+          <div class="video-sub">速豹国际物流仓库实拍</div>
+        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -545,6 +596,21 @@
     document.getElementById('detailEst').textContent=area+'→中国 | '+days+' | '+w+'kg 估算';
     document.getElementById('result').classList.add('show');
   }
+  </script>
+
+  <script>
+  document.querySelectorAll('.video-thumb').forEach(function(t){
+    t.addEventListener('click', function(){
+      var id = t.getAttribute('data-video');
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0&modestbranding=1&autoplay=1';
+      f.setAttribute('frameborder','0');
+      f.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      f.setAttribute('allowfullscreen','');
+      f.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0';
+      t.innerHTML = ''; t.appendChild(f);
+    });
+  });
   </script>
 </body>
 </html>

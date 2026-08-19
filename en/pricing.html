@@ -82,8 +82,20 @@
     .btn-wa{display:inline-block;background:var(--green);color:#fff;padding:14px 28px;border-radius:var(--radius-pill);font-weight:700;font-size:15px}
     .btn-wa:hover{background:#1DA851;color:#fff}
     @media(max-width:768px){h1{font-size:30px}table{font-size:13px}th,td{padding:10px 12px}}
-  </style>
+  
+  .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .video-card{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
+  .video-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+  .video-thumb{position:relative;cursor:pointer;aspect-ratio:16/9;background:#000}
+  .video-thumb img{width:100%;height:100%;object-fit:cover}
+  .video-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,0,0,.92);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;padding-left:4px;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:transform .15s}
+  .video-thumb:hover .video-play{transform:translate(-50%,-50%) scale(1.1)}
+  .video-info{padding:12px 16px}
+  .video-name{font-size:14px;font-weight:700;color:var(--text)}
+  .video-sub{font-size:12px;color:var(--text-secondary);margin-top:2px}
+</style>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "USA to China Shipping Service", "serviceType": "International Logistics", "provider": {"@type": "Organization", "name": "Subao Global Logistics"}, "areaServed": "Mainland China", "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "6.5", "highPrice": "12", "offerCount": "3"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Subao warehouse videos", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "VideoObject", "name": "Subao Warehouse: Parcel Sorting", "description": "Behind-the-scenes at Subao Global warehouse: Parcel Sorting. See how your parcel is handled from intake to dispatch.", "thumbnailUrl": "https://i.ytimg.com/vi/DEraXkkT2Fs/hqdefault.jpg", "uploadDate": "2026-08-19", "embedUrl": "https://www.youtube-nocookie.com/embed/DEraXkkT2Fs", "contentUrl": "https://www.youtube.com/watch?v=DEraXkkT2Fs"}}, {"@type": "ListItem", "position": 2, "item": {"@type": "VideoObject", "name": "Subao Warehouse: Parcel Packing & Dispatch", "description": "Behind-the-scenes at Subao Global warehouse: Parcel Packing & Dispatch. See how your parcel is handled from intake to dispatch.", "thumbnailUrl": "https://i.ytimg.com/vi/MlpXMKRhqNk/hqdefault.jpg", "uploadDate": "2026-08-19", "embedUrl": "https://www.youtube-nocookie.com/embed/MlpXMKRhqNk", "contentUrl": "https://www.youtube.com/watch?v=MlpXMKRhqNk"}}, {"@type": "ListItem", "position": 3, "item": {"@type": "VideoObject", "name": "Subao Warehouse: Pre-Dispatch Inspection", "description": "Behind-the-scenes at Subao Global warehouse: Pre-Dispatch Inspection. See how your parcel is handled from intake to dispatch.", "thumbnailUrl": "https://i.ytimg.com/vi/Ara0yCCTc34/hqdefault.jpg", "uploadDate": "2026-08-19", "embedUrl": "https://www.youtube-nocookie.com/embed/Ara0yCCTc34", "contentUrl": "https://www.youtube.com/watch?v=Ara0yCCTc34"}}]}</script>
 </head>
 <body>
   <header class="header">
@@ -106,6 +118,35 @@
   </header>
 
   <main class="page">
+
+  <section class="section video-section">
+    <div class="container">
+      <div class="section-title"><h2>Inside Our Warehouse · How Your Parcel Is Handled</h2><p>Real warehouse operations, full transparency</p></div>
+      <div class="video-grid">
+      <div class="video-card">
+        <div class="video-thumb" data-video="DEraXkkT2Fs" role="button" aria-label="Play video: Parcel Sorting">
+          <img src="https://i.ytimg.com/vi/DEraXkkT2Fs/hqdefault.jpg" alt="Subao warehouse: Parcel Sorting" loading="lazy">
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-info"><div class="video-name">📦 Parcel Sorting</div><div class="video-sub">Subao Global warehouse</div></div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb" data-video="MlpXMKRhqNk" role="button" aria-label="Play video: Parcel Packing & Dispatch">
+          <img src="https://i.ytimg.com/vi/MlpXMKRhqNk/hqdefault.jpg" alt="Subao warehouse: Parcel Packing & Dispatch" loading="lazy">
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-info"><div class="video-name">📦 Parcel Packing & Dispatch</div><div class="video-sub">Subao Global warehouse</div></div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb" data-video="Ara0yCCTc34" role="button" aria-label="Play video: Pre-Dispatch Inspection">
+          <img src="https://i.ytimg.com/vi/Ara0yCCTc34/hqdefault.jpg" alt="Subao warehouse: Pre-Dispatch Inspection" loading="lazy">
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-info"><div class="video-name">📦 Pre-Dispatch Inspection</div><div class="video-sub">Subao Global warehouse</div></div>
+      </div>
+      </div>
+    </div>
+  </section>
     <div class="container">
       <h1>Shipping rates to China</h1>
       <p class="lead">All prices are in USD per kilogram, door-to-door, and include tax-inclusive customs clearance. No fuel surcharges, no port fees, no hidden extras.</p>
@@ -178,5 +219,20 @@
       </div>
     </div>
   </main>
+
+  <script>
+  document.querySelectorAll('.video-thumb').forEach(function(t){
+    t.addEventListener('click', function(){
+      var id = t.getAttribute('data-video');
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0&modestbranding=1&autoplay=1';
+      f.setAttribute('frameborder','0');
+      f.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      f.setAttribute('allowfullscreen','');
+      f.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0';
+      t.innerHTML = ''; t.appendChild(f);
+    });
+  });
+  </script>
 </body>
 </html>
