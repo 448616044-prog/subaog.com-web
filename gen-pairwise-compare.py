@@ -86,7 +86,7 @@ CLUSTER_TITLES = {
 
 def render(lang, slug, d):
     is_zh = lang == "zh"
-    canon = f"https://subaog.com/{ 'zh-cn' if is_zh else 'en' }/blog/{slug}.html"
+    canon = f"https://subaog.com/{ 'zh-cn' if is_zh else 'en' }/blog/{slug}"
     # 对比页集群互链（排除自身）
     cluster_titles = CLUSTER_TITLES[lang]
     cluster_links = "".join(
@@ -97,7 +97,7 @@ def render(lang, slug, d):
       <div style="font-size:14px;font-weight:700;color:var(--primary-dark);margin-bottom:8px">{'🔍 更多中美快递两两对比' if is_zh else '🔍 More carrier head-to-head comparisons'}</div>
       {cluster_links}
     </div>'''
-    other = f"https://subaog.com/{ 'en' if is_zh else 'zh-cn' }/blog/{slug}.html"
+    other = f"https://subaog.com/{ 'en' if is_zh else 'zh-cn' }/blog/{slug}"
     home = "https://subaog.com/zh-cn/" if is_zh else "https://subaog.com/en/"
     logo_home = "/zh-cn/" if is_zh else "/en/"
     blog_idx = "/zh-cn/blog/" if is_zh else "/en/blog/"
@@ -144,9 +144,9 @@ def render(lang, slug, d):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{d['title']}</title>
   <meta name="description" content="{d['desc']}">
-  <link rel="alternate" hreflang="zh-CN" href="https://subaog.com/zh-cn/blog/{slug}.html">
-  <link rel="alternate" hreflang="en" href="https://subaog.com/en/blog/{slug}.html">
-  <link rel="alternate" hreflang="x-default" href="https://subaog.com/zh-cn/blog/{slug}.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://subaog.com/zh-cn/blog/{slug}">
+  <link rel="alternate" hreflang="en" href="https://subaog.com/en/blog/{slug}">
+  <link rel="alternate" hreflang="x-default" href="https://subaog.com/zh-cn/blog/{slug}">
   <link rel="canonical" href="{canon}">
   <meta property="og:title" content="{d['og_title']}">
   <meta property="og:description" content="{d['og_desc']}">

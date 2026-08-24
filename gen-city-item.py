@@ -37,8 +37,7 @@ def gen_page(lang, city, item):
     item_slug_low = islug
 
     if lang == "zh-cn":
-        rel = f"usa-to-china/{cslug}/{islug}/index.html"
-        zh_url = f"{DOMAIN}/zh-cn/{rel}"
+        zh_url = f"{DOMAIN}/zh-cn/usa-to-china/{cslug}/{islug}/"
         en_url = f"{DOMAIN}/en/usa-to-china/{cslug}/{islug}/"
         title = f"从{cname}寄{izh}回国｜美国{cname}到中国物流专线 | 速豹国际物流"
         desc = (f"从美国{cname}寄{izh}回国：{item['verdict_zh']}，税率{item['rate']}。"
