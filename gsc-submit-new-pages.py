@@ -21,16 +21,16 @@ URLS = []
 
 # 1) 6 个新对比落地页（USPS-vs-UPS / FedEx-vs-UPS / DHL-vs-USPS × zh/en）
 for slug in ["usps-vs-ups-china", "fedex-vs-ups-china", "dhl-vs-usps-china"]:
-    URLS += [f"{base}/zh-cn/blog/{slug}.html", f"{base}/en/blog/{slug}.html"]
+    URLS += [f"{base}/zh-cn/blog/{slug}", f"{base}/en/blog/{slug}"]
 
 # 2) 4 个新聚合页（can-i-ship-index / routes × zh/en）
 URLS += [f"{base}/zh-cn/can-i-ship-index/", f"{base}/en/can-i-ship-index/",
          f"{base}/zh-cn/routes/", f"{base}/en/routes/"]
 
 # 3) 4 个中词推首页优化页（已补 FAQ + 内链）
-URLS += [f"{base}/en/blog/dhl-vs-fedex-vs-ups-china.html",
-         f"{base}/en/city/san-diego-to-hangzhou.html",
-         f"{base}/zh-cn/city/miami-to-shanghai.html",
+URLS += [f"{base}/en/blog/dhl-vs-fedex-vs-ups-china",
+         f"{base}/en/city/san-diego-to-hangzhou",
+         f"{base}/zh-cn/city/miami-to-shanghai",
          f"{base}/zh-cn/seasia-to-china/singapore/"]
 
 # 4) 20 个 city hub（本次注入品类导航，需重爬）— 取部分高分城市避免超配额
