@@ -94,7 +94,7 @@ gtag('config', 'G-DJGPMS9MOB');
 </head>
 <body>
   <header class="header"><div class="container">
-    <a href="/zh-cn/" class="logo"><img src="/assets/images/logo.png" alt="速豹回国物流" style="height:60px;width:auto;display:block;" fetchpriority="high" decoding="async"></a>
+    <a href="/zh-cn/" class="logo"><img src="/assets/images/logo.png" alt="速豹回国物流" style="height:63px;width:auto;display:block;" fetchpriority="high" decoding="async"></a>
     <nav class="nav">
         <a href="/">首页</a>
         <a href="/zh-cn/usa-to-china/">美国寄中国</a>
@@ -121,7 +121,7 @@ gtag('config', 'G-DJGPMS9MOB');
             <div class="form-group"><label>目的城市</label><select id="to"><option>北京</option><option>上海</option><option>广州</option><option>深圳</option><option>成都</option><option>杭州</option></select></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>重量 (kg)</label><input type="number" id="weight" min="20" max="500" placeholder="如：21" value="20"></div>
+            <div class="form-group"><label>重量 (kg)</label><input type="number" id="weight" min="20" max="500" placeholder="20" value="20" autocomplete="off"></div>
             <div class="form-group"><label>出发档位</label><select id="tier"><option value="1">档1 美/加/墨/澳/新 (¥100/kg)</option><option value="2">档2 欧洲 (¥90/kg)</option><option value="3">档3 日/韩/泰/东南亚 (¥80/kg)</option></select></div>
         </div>
         <script>function calc(){var w=parseFloat(document.getElementById('weight').value);var t=parseInt(document.getElementById('tier').value);if(!w||w<20){document.getElementById('price').textContent='—';document.getElementById('detail').textContent='最低起运 20kg，不足 20kg 不予收寄';document.getElementById('result').classList.add('show');return;}var p20={1:100,2:90,3:80}[t];var p100={1:90,2:80,3:70}[t];var p=w<100?p20:p100;var names=['','美/加/墨/澳/新','欧洲','日/韩/泰/东南亚'];var est=Math.round(w*p);document.getElementById('price').textContent='¥'+est;document.getElementById('detail').textContent='档'+t+'（'+names[t]+'）· '+w+'kg × ¥'+p+'/kg · 双清包税门到门 · 10-15 个工作日';document.getElementById('result').classList.add('show')}</script>

@@ -104,7 +104,7 @@ a{text-decoration:none;color:inherit}
 <body>
   <header class="header">
     <div class="container">
-      <a href="/en/" class="logo"><img src="/assets/images/logo.png" alt="Subao Global" style="height:60px;width:auto;display:block;" fetchpriority="high" decoding="async"></a>
+      <a href="/en/" class="logo"><img src="/assets/images/logo.png" alt="Subao Global" style="height:63px;width:auto;display:block;" fetchpriority="high" decoding="async"></a>
       <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
       <nav class="nav">
         <a href="/en/usa-to-china/">USA→China</a>
@@ -132,7 +132,7 @@ a{text-decoration:none;color:inherit}
         <option value="80">SE Asia → China (¥80/kg, luggage line)</option>
       </select>
       <label style="font-size:13px;font-weight:600">Weight (kg)</label>
-      <input type="number" id="weight" value="20" min="20" style="width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin:6px 0 16px">
+      <input type="number" id="weight" value="20" min="20" placeholder="20" autocomplete="off" style="width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin:6px 0 16px">
       <button onclick="calc()" style="width:100%;background:var(--primary);color:#fff;border:none;padding:13px;border-radius:24px;font-weight:700;font-size:15px;cursor:pointer">Calculate</button>
       <div id="result" style="margin-top:16px;padding:16px;background:var(--primary-light);border-radius:10px;text-align:center;display:none"></div>
     </div>
