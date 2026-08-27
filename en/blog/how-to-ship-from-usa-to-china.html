@@ -33,28 +33,28 @@
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:var(--text);line-height:1.6;font-size:16px;background:var(--bg);overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 .container{max-width:1100px;margin:0 auto;padding:0 24px}
-.header{position:fixed;top:0;left:0;right:0;height:var(--nav-height);background:rgba(255,255,255,.96);backdrop-filter:blur(12px);z-index:1000;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.header{position:fixed;top:0;left:0;right:0;height:var(--nav-height);background:rgba(255,255,255.96);backdrop-filter:blur(12px);z-index:1000;box-shadow:0 1px 3px rgba(0,0,0.05)}
 .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
 .logo{font-size:20px;font-weight:700;color:var(--primary)}
 .logo span{font-size:11px;color:var(--text-secondary);font-weight:400;border-left:2px solid var(--border);padding-left:8px;margin-left:8px}
 .nav{display:flex;align-items:center;gap:2px}
 .nav a{padding:7px 13px;font-size:13px;font-weight:500;color:var(--text-secondary);border-radius:var(--radius-pill);transition:all .2s;white-space:nowrap}
-.nav a:hover,.nav a.active{color:var(--primary);background:var(--primary-light)}
+.nav a:hover.nav a.active{color:var(--primary);background:var(--primary-light)}
 .nav .btn-wa{background:var(--green);color:#fff;padding:7px 16px;font-weight:600}
 .burger{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text)}
 .lang-switch{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;font-size:13px;font-weight:600;color:var(--primary);border:1.5px solid var(--primary-light);border-radius:var(--radius-pill);background:#fff}
 .lang-switch:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
 .lang-switch .sep{color:var(--border);margin:0 2px;font-weight:400}
 .lang-switch .lang-en{color:var(--primary)}
-.lang-switch:hover .lang-en,.lang-switch:hover .sep{color:#fff}
-@media(max-width:768px){.nav{display:none;position:absolute;top:var(--nav-height);left:0;right:0;background:#fff;flex-direction:column;padding:16px 24px;box-shadow:0 8px 32px rgba(0,0,0,.1);gap:4px;max-height:calc(100vh - var(--nav-height));overflow-y:auto}.nav.open{display:flex}.burger{display:block}.nav a{width:100%;padding:10px 16px}.lang-switch{width:100%;justify-content:flex-start;padding:10px 16px;border-radius:var(--radius);border-color:var(--border)}}
+.lang-switch:hover .lang-en.lang-switch:hover .sep{color:#fff}
+@media(max-width:768px){.nav{display:none;position:absolute;top:var(--nav-height);left:0;right:0;background:#fff;flex-direction:column;padding:16px 24px;box-shadow:0 8px 32px rgba(0,0,0.1);gap:4px;max-height:calc(100vh - var(--nav-height));overflow-y:auto}.nav.open{display:flex}.burger{display:block}.nav a{width:100%;padding:10px 16px}.lang-switch{width:100%;justify-content:flex-start;padding:10px 16px;border-radius:var(--radius);border-color:var(--border)}}
 .hero{background:linear-gradient(135deg,#004C99,#0066CC);color:#fff;padding:120px 24px 72px}
 .hero .container{max-width:1100px}
 .hero h1{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;letter-spacing:-.5px;line-height:1.25;margin-bottom:16px}
 .hero .subtitle{font-size:16px;opacity:.92;max-width:680px;line-height:1.7;margin-bottom:28px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
 .btn-primary{background:#fff;color:var(--primary);padding:13px 26px;border-radius:var(--radius-pill);font-weight:700;font-size:15px}
-.btn-outline{border:1.5px solid rgba(255,255,255,.6);color:#fff;padding:12px 24px;border-radius:var(--radius-pill);font-weight:600;font-size:15px}
+.btn-outline{border:1.5px solid rgba(255,255,255.6);color:#fff;padding:12px 24px;border-radius:var(--radius-pill);font-weight:600;font-size:15px}
 .section{padding:56px 0}
 .section-title{text-align:center;margin-bottom:36px}
 .section-title h2{font-size:1.7rem;font-weight:700;margin-bottom:8px}
@@ -97,9 +97,9 @@ a{text-decoration:none;color:inherit}
 @media(max-width:768px){.footer-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
 .footer h4{font-size:13px;font-weight:600;margin-bottom:14px;color:#ccc}
-.footer a,.footer p{display:block;color:#999;font-size:13px;margin-bottom:8px}
+.footer a.footer p{display:block;color:#999;font-size:13px;margin-bottom:8px}
 .footer a:hover{color:#fff}
-.footer-bottom{text-align:center;padding-top:30px;margin-top:30px;border-top:1px solid rgba(255,255,255,.1);font-size:12px;color:#666}
+.footer-bottom{text-align:center;padding-top:30px;margin-top:30px;border-top:1px solid rgba(255,255,255.1);font-size:12px;color:#666}
 </style>
 </head>
 <body>
@@ -134,7 +134,7 @@ a{text-decoration:none;color:inherit}
     <div style="background:var(--primary-light);border:1px solid #CDE3F5;border-radius:12px;padding:20px 24px;margin:32px 0">
       <div style="font-size:14px;font-weight:700;color:var(--primary-dark);margin-bottom:6px">📦 Related service</div>
       <a href="/en/usa-to-china/" style="font-size:15px;font-weight:700;color:var(--primary);text-decoration:underline">Ship from the USA to China →</a>
-      <p style="font-size:13px;color:var(--text-secondary);margin-top:4px">Tax-inclusive line from $11/kg (21kg+), free US pickup, 7–10 days door-to-door</p>
+      <p style="font-size:13px;color:var(--text-secondary);margin-top:4px">Tax-inclusive line from ¥100/kg (21kg+), free US pickup, 7–10 days door-to-door</p>
     </div>
     <div class="section-title" style="margin-top:44px"><h2>Frequently asked questions</h2></div>
     <div class="faq-list"><div class="faq-item"><button class="faq-q">Is shipping from the USA to China complicated?<span class="faq-icon">▼</span></button><div class="faq-a">No. Pack → book pickup → we handle transit/customs/delivery; the recipient just receives the parcel. 6 steps total.</div></div><div class="faq-item"><button class="faq-q">How is shipping charged?<span class="faq-icon">▼</span></button><div class="faq-a">The larger of actual or volumetric weight; air ¥70–80/kg (21kg+) tax-inclusive; better at 100kg+.</div></div><div class="faq-item"><button class="faq-q">How long does it take?<span class="faq-icon">▼</span></button><div class="faq-a">Air 7–10 working days; sea 25–35 days; express 2–6 days.</div></div><div class="faq-item"><button class="faq-q">First-time shipping tips?<span class="faq-icon">▼</span></button><div class="faq-a">1) Confirm the item ships 2) Vacuum-compress to save volume 3) Declare honestly 4) Insure high-value items.</div></div><div class="faq-item"><button class="faq-q">What do I need to provide?<span class="faq-icon">▼</span></button><div class="faq-a">Recipient name/phone/address + ID (for customs; handled securely).</div></div><div class="faq-item"><button class="faq-q">How do I track?<span class="faq-icon">▼</span></button><div class="faq-a">One tracking number from US pickup to China delivery.</div></div><div class="faq-item"><button class="faq-q">Can I ship food?<span class="faq-icon">▼</span></button><div class="faq-a">Packaged food (snacks/tea/supplements) yes; fresh meat/fruit/seeds no.</div></div><div class="faq-item"><button class="faq-q">Will it be taxed?<span class="faq-icon">▼</span></button><div class="faq-a">Tax-inclusive channels cover duty. Compliant personal items pay nothing extra.</div></div><div class="faq-item"><button class="faq-q">What if it's lost?<span class="faq-icon">▼</span></button><div class="faq-a">Optional insurance pays per insured value. Basic coverage handles standard risk.</div></div><div class="faq-item"><button class="faq-q">Which Chinese cities?<span class="faq-icon">▼</span></button><div class="faq-a">All major mainland cities, door-to-door; first-tier cities fastest.</div></div></div>

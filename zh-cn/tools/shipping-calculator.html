@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="applicable-device" content="pc,mobile">
   <title>美国寄中国运费计算器2026 | 免费估算国际运费 | 速豹国际</title>
-  <meta name="description" content="美国寄中国运费计算器：输入重量和目的地，自动估算空运/海运/快递运费。免费工具，即时出价">
+  <meta name="description" content="美国寄中国运费计算器：输入重量和目的地，自动估算空运/快递运费。免费工具，即时出价">
   <link rel="canonical" href="https://subaog.com/zh-cn/tools/shipping-calculator">
   <link rel="alternate" hreflang="zh-CN" href="https://subaog.com/zh-cn/tools/shipping-calculator">
   <link rel="alternate" hreflang="en" href="https://subaog.com/en/tools/shipping-calculator">
@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://subaog.com/zh-cn/tools/shipping-calculator">
   <!-- hreflang:auto:subaog-multilang --> <!-- canonical:auto:subaog-multilang -->
   <meta property="og:title" content="美国寄中国运费计算器 | 免费估算国际运费">
-  <meta property="og:description" content="快速估算从美国寄包裹到中国的运费。支持空运、海运、国际快递三种方式。">
+  <meta property="og:description" content="快速估算从美国寄包裹到中国的运费。支持空运。">
   <meta property="og:image" content="https://subaog.com/assets/images/og-image.jpg">
   <meta property="og:type" content="website">
   
@@ -89,7 +89,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-DJGPMS9MOB');
 </script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "跨境物流怎么选最划算？", "acceptedAnswer": {"@type": "Answer", "text": "小件/急件走空运，大件/搬家走海运，本页有详细对比。"}}, {"@type": "Question", "name": "跨境物流大概多少钱？", "acceptedAnswer": {"@type": "Answer", "text": "空运约 $9.5/kg（21kg 起），海运约 $5.5/kg，可免费估价。"}}, {"@type": "Question", "name": "跨境物流多久能到？", "acceptedAnswer": {"@type": "Answer", "text": "空运 10-15 个工作日，海运 25-35 天。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "跨境物流怎么选最划算？", "acceptedAnswer": {"@type": "Answer", "text": "小件/急件走空运，大件/搬家走，本页有详细对比。"}}, {"@type": "Question", "name": "跨境物流大概多少钱？", "acceptedAnswer": {"@type": "Answer", "text": "空运约 ¥80/kg（21kg 起），kg，可免费估价。"}}, {"@type": "Question", "name": "跨境物流多久能到？", "acceptedAnswer": {"@type": "Answer", "text": "空运 10-15 个工作日。"}}]}</script>
 </head>
 <body>
   <header class="header"><div class="container">
@@ -121,10 +121,7 @@ gtag('config', 'G-DJGPMS9MOB');
           </div>
           <div class="form-row">
             <div class="form-group"><label>重量 (lb)</label><input type="number" id="weight" min="1" max="500" placeholder="如：10" value="10"></div>
-            <div class="form-group"><label>运输方式</label><select id="method"><option value="air">空运专线</option><option value="sea">海运专线</option><option value="express">国际快递</option></select></div>
-          </div>
-          <button class="btn-primary" onclick="calc()">计算运费</button>
-          <div class="result-box" id="result"><div class="big-num" id="price">--</div><div class="detail" id="detail"></div><p style="margin-top:12px;font-size:13px;color:var(--text-secondary)">* 以上为估算，实际以客服确认为准</p></div>
+            <div class="form-group"><label>运输方式</label><select id="method"><option value="air">空运专线</option><option value="sea">，实际以客服确认为准</p></div>
         </div>
         <script>function calc(){var w=parseFloat(document.getElementById('weight').value)||21;var m=document.getElementById('method').value;var min,max,days;if(m==='air'){min=4;max=5.5;days='7-10天（行李专线 2026-6-30 起）'}else if(m==='sea'){min=2;max=3.5;days='25-35天'}else{min=12;max=25;days='3-5天'};document.getElementById('price').textContent='$'+(w*((min+max)/2)).toFixed(0)+' - $'+(w*max).toFixed(0);document.getElementById('detail').textContent=days+' | '+w+'lb（行李专线）';document.getElementById('result').classList.add('show')}</script>
         <div class="tool-info">
@@ -140,9 +137,9 @@ gtag('config', 'G-DJGPMS9MOB');
           <h2>美国寄中国运费是怎么算的？</h2>
           <p>国际运费 = 重量 × 单价 + 附加费（燃油附加、偏远地区、关税）。计费重量取「实际重量」和「材积重量」的较大值。材积重量 = 长×宽×高(cm) ÷ 5000。</p>
           <h2>运费参考价格表</h2>
-          <p>空运专线：$5-8/lb，7-10天<br>海运专线：$2-4/lb，25-35天<br>国际快递(FedEx/UPS/DHL)：$10-25/lb，3-5天<br>华人快递集运：$4-6/lb，7-10天</p>
+          <p>空运专线：$5-8/lb，7-10天<br>，25-35天<br>国际快递(FedEx/UPS/DHL)：$10-25/lb，3-5天<br>华人快递集运：$4-6/lb，7-10天</p>
           <h2>怎么寄最省钱？</h2>
-          <p>① 凑重寄：10lb以上的包裹单价更低 ② 不急走海运：比空运便宜50-70% ③ 多家比价：不同华人快递价格差异大 ④ 避免材积重超标：尽量用紧凑包装。</p>
+          <p>① 凑重寄：10lb以上的包裹单价更低 ② 不急走。</p>
         </div>
   </div>
   
@@ -155,6 +152,6 @@ gtag('config', 'G-DJGPMS9MOB');
     </div>
     <div style="text-align:center;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1);font-size:11px;color:#666"><p>&copy; 2026 速豹国际物流 | <a href="/sitemap.xml" style="color:#666">Sitemap</a></p></div>
   <div><h4>更多资源</h4><a href="/zh-cn/routes/">全部线路</a><a href="/zh-cn/can-i-ship-index/">能不能寄·分类</a><a href="/zh-cn/tools/customs-duty-calculator.html">关税估算</a><a href="/zh-cn/tools/volume-calculator.html">材积计算</a><a href="/zh-cn/tools/transit-time.html">时效查询</a></div>
-  <section style="max-width:1100px;margin:40px auto;padding:0 24px"><h2 style="font-size:22px;font-weight:700;margin-bottom:16px">常见问题</h2><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">跨境物流怎么选最划算？</h3><p style="margin:0;color:#64748B;line-height:1.7">小件/急件走空运，大件/搬家走海运，本页有详细对比。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">跨境物流大概多少钱？</h3><p style="margin:0;color:#64748B;line-height:1.7">空运约 $9.5/kg（21kg 起），海运约 $5.5/kg，可免费估价。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">跨境物流多久能到？</h3><p style="margin:0;color:#64748B;line-height:1.7">空运 10-15 个工作日，海运 25-35 天。</p></div></section>
+  <section style="max-width:1100px;margin:40px auto;padding:0 24px"><h2 style="font-size:22px;font-weight:700;margin-bottom:16px">常见问题</h2><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">跨境物流怎么选最划算？</h3><p style="margin:0;color:#64748B;line-height:1.7">小件/急件走空运，大件/搬家走，本页有详细对比。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">跨境物流大概多少钱？</h3><p style="margin:0;color:#64748B;line-height:1.7">空运约 ¥80/kg（21kg 起），kg，可免费估价。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">跨境物流多久能到？</h3><p style="margin:0;color:#64748B;line-height:1.7">空运 10-15 个工作日。</p></div></section>
 </footer>
 </body></html>
