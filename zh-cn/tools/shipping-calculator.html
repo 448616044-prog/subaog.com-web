@@ -128,6 +128,15 @@ gtag('config', 'G-DJGPMS9MOB');
         </div>
         <script>function calc(){var w=parseFloat(document.getElementById('weight').value)||21;var m=document.getElementById('method').value;var min,max,days;if(m==='air'){min=4;max=5.5;days='7-10天（行李专线 2026-6-30 起）'}else if(m==='sea'){min=2;max=3.5;days='25-35天'}else{min=12;max=25;days='3-5天'};document.getElementById('price').textContent='$'+(w*((min+max)/2)).toFixed(0)+' - $'+(w*max).toFixed(0);document.getElementById('detail').textContent=days+' | '+w+'lb（行李专线）';document.getElementById('result').classList.add('show')}</script>
         <div class="tool-info">
+          <h2>包税渠道计算规则（按 3 档国家）</h2>
+          <p><strong>起重 20kg：</strong>不足 20kg 按 20kg 算（即最低收费 20kg）。<br>
+          <strong>价格（包税双清门到门）：</strong><br>
+          · 档1（美/加/墨/澳/新）：20-99kg ¥80/kg，100kg+ ¥75/kg<br>
+          · 档2（欧洲）：20-99kg ¥75/kg，100kg+ ¥70/kg<br>
+          · 档3（日/韩/泰/新/菲/台/马）：20-99kg ¥70/kg，100kg+ ¥65/kg<br>
+          <strong>清关费：</strong>含 100元申报手续费（双清包税门到门）。<br>
+          <strong>计算公式：</strong>整票 1KG 取整进位；计费重量 = max(实际重, 材积重)；材积重 = L×W×H(cm) ÷ 5000。<br>
+          <strong>超规附加：</strong>单件 &gt; 25KG 或单边 &gt; 120CM 或周长 &gt; 266CM，有附加费。</p>
           <h2>美国寄中国运费是怎么算的？</h2>
           <p>国际运费 = 重量 × 单价 + 附加费（燃油附加、偏远地区、关税）。计费重量取「实际重量」和「材积重量」的较大值。材积重量 = 长×宽×高(cm) ÷ 5000。</p>
           <h2>运费参考价格表</h2>
