@@ -122,13 +122,13 @@ a{text-decoration:none;color:inherit}
     <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px">
       <label style="font-size:13px;font-weight:600">Origin route</label>
       <select id="route" style="width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin:6px 0 16px">
-        <option value="11">USA → China (¥100/kg, luggage line)</option>
-        <option value="9.5">Japan → China (¥80/kg, luggage line)</option>
-        <option value="9.5">Korea → China (¥80/kg, luggage line)</option>
-        <option value="10.5">Europe → China (¥90/kg, luggage line)</option>
-        <option value="11">Canada → China (¥100/kg, luggage line)</option>
-        <option value="11">Australia → China (¥100/kg, luggage line)</option>
-        <option value="9.5">SE Asia → China (¥80/kg, luggage line)</option>
+        <option value="100">USA → China (¥100/kg, luggage line)</option>
+        <option value="80">Japan → China (¥80/kg, luggage line)</option>
+        <option value="80">Korea → China (¥80/kg, luggage line)</option>
+        <option value="90">Europe → China (¥90/kg, luggage line)</option>
+        <option value="100">Canada → China (¥100/kg, luggage line)</option>
+        <option value="100">Australia → China (¥100/kg, luggage line)</option>
+        <option value="80">SE Asia → China (¥80/kg, luggage line)</option>
       </select>
       <label style="font-size:13px;font-weight:600">Weight (kg)</label>
       <input type="number" id="weight" value="21" min="1" style="width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin:6px 0 16px">
@@ -155,9 +155,10 @@ a{text-decoration:none;color:inherit}
       var r = parseFloat(document.getElementById('route').value);
       var w = parseFloat(document.getElementById('weight').value);
       if (!w || w < 1) { alert('Please enter a valid weight.'); return; }
-      var est = r * w;
+      if (w < 20) w = 20;
+      var est = Math.round(r * w);
       document.getElementById('result').style.display = 'block';
-      document.getElementById('result').innerHTML = '<div style="font-size:1.8rem;font-weight:800;color:var(--primary)">$' + est.toFixed(2) + '</div><div style="font-size:13px;color:var(--text-secondary)">Estimated all-in cost for ' + w + ' kg (air freight)</div>';
+      document.getElementById('result').innerHTML = '<div style="font-size:1.8rem;font-weight:800;color:var(--primary)">¥' + est + '</div><div style="font-size:13px;color:var(--text-secondary)">Estimated all-in for ' + w + ' kg · 20kg minimum · tax-inclusive door-to-door · 10–15 working days</div>';
     }
   </script>
   <footer class="footer">

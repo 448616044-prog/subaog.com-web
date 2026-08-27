@@ -120,17 +120,17 @@ gtag('config', 'G-DJGPMS9MOB');
             <div class="form-group"><label>目的城市</label><select id="to"><option>北京</option><option>上海</option><option>广州</option><option>深圳</option><option>成都</option><option>杭州</option></select></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>重量 (lb)</label><input type="number" id="weight" min="1" max="500" placeholder="如：10" value="10"></div>
-            <div class="form-group"><label>运输方式</label><select id="method"><option value="air">空运专线</option><option value="sea">，实际以客服确认为准</p></div>
+            <div class="form-group"><label>重量 (kg)</label><input type="number" id="weight" min="20" max="500" placeholder="如：21" value="21"></div>
+            <div class="form-group"><label>出发档位</label><select id="tier"><option value="1">档1 美/加/墨/澳/新 (¥100/kg)</option><option value="2">档2 欧洲 (¥90/kg)</option><option value="3">档3 日/韩/泰/东南亚 (¥80/kg)</option></select></div>
         </div>
-        <script>function calc(){var w=parseFloat(document.getElementById('weight').value)||21;var m=document.getElementById('method').value;var min,max,days;if(m==='air'){min=4;max=5.5;days='10-15 个工作日（行李专线 2026-6-30 起）'}else if(m==='sea'){min=2;max=3.5;days=''}else{min=12;max=25;days='3-5天'};document.getElementById('price').textContent='$'+(w*((min+max)/2)).toFixed(0)+' - $'+(w*max).toFixed(0);document.getElementById('detail').textContent=days+' | '+w+'lb（行李专线）';document.getElementById('result').classList.add('show')}</script>
+        <script>function calc(){var w=parseFloat(document.getElementById('weight').value)||20;if(w<20)w=20;var t=parseInt(document.getElementById('tier').value);var p20={1:100,2:90,3:80}[t];var p100={1:90,2:80,3:70}[t];var p=w<100?p20:p100;var names=['','美/加/墨/澳/新','欧洲','日/韩/泰/东南亚'];var est=Math.round(w*p);document.getElementById('price').textContent='¥'+est;document.getElementById('detail').textContent='档'+t+'（'+names[t]+'）· '+w+'kg × ¥'+p+'/kg · 双清包税门到门 · 10-15 个工作日';document.getElementById('result').classList.add('show')}</script>
         <div class="tool-info">
           <h2>包税渠道计算规则（按 3 档国家）</h2>
           <p><strong>起重 20kg：</strong>不足 20kg 按 20kg 算（即最低收费 20kg）。<br>
           <strong>价格（包税双清门到门）：</strong><br>
           · 档1（美/加/墨/澳/新）：20-99kg ¥100/kg，100kg+ ¥90/kg<br>
-          · 档2（欧洲）：20-99kg ¥90/kg，100kg+ ¥100/kg<br>
-          · 档3（日/韩/泰/新/菲/台/马）：20-99kg ¥100/kg，100kg+ ¥80/kg<br>
+          · 档2（欧洲）：20-99kg ¥90/kg，100kg+ ¥80/kg<br>
+          · 档3（日/韩/泰/新/菲/台/马）：20-99kg ¥80/kg，100kg+ ¥70/kg<br>
           <strong>清关费：</strong>含 100元申报手续费（双清包税门到门）。<br>
           <strong>计算公式：</strong>整票 1KG 取整进位；计费重量 = max(实际重, 材积重)；材积重 = L×W×H(cm) ÷ 5000。<br>
           <strong>超规附加：</strong>单件 &gt; 25KG 或单边 &gt; 120CM 或周长 &gt; 266CM，有附加费。</p>
