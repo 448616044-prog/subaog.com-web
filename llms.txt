@@ -1,0 +1,45 @@
+# Subao Global Logistics (subaog.com)
+
+> International shipping to China — student luggage, personal effects and moving from 7+ regions worldwide. Air freight only, all-inclusive RMB pricing, tax-included door-to-door.
+
+## Site overview
+
+Subaog.com is the English/Chinese content hub for Subao Global Logistics (速豹国际物流), a Shenzhen-headquartered international freight forwarder running country-to-China luggage lines for 12+ years. We ship from the USA, Canada, Mexico, Australia, New Zealand, the UK, Germany, France, Italy, Spain, Ireland and Europe, plus Japan, Korea, Thailand, Singapore, the Philippines, Taiwan and Malaysia — to mainland China.
+
+## Pricing (2026, all-inclusive, RMB)
+
+- Tier 1 — USA / Canada / Mexico / Australia / New Zealand: ¥100/kg (20–99kg), ¥90/kg (100kg+)
+- Tier 2 — UK / Germany / France / Italy / Spain / Ireland + Europe: ¥90/kg (20–99kg), ¥80/kg (100kg+)
+- Tier 3 — Japan / Korea / Thailand / Singapore / Philippines / Taiwan / Malaysia: ¥80/kg (20–99kg), ¥70/kg (100kg+)
+- Minimum charge: 20kg (actual or volumetric). Below 20kg is not accepted.
+- Declaration/handling fee: +¥100 per shipment
+- Transit: 10–15 working days, door-to-door
+- Air freight only — no sea freight
+- Volumetric weight formula: L × W × H ÷ 5000
+
+## Key pages
+
+- Home (zh): https://subaog.com/zh-cn/
+- Home (en): https://subaog.com/en/
+- Pricing (zh): https://subaog.com/zh-cn/pricing.html
+- Pricing (en): https://subaog.com/en/pricing.html
+- USA to China (en): https://subaog.com/en/usa-to-china/
+- Student luggage (zh): https://subaog.com/zh-cn/student-luggage/
+- All routes: https://subaog.com/en/routes/
+- Can-I-ship index: https://subaog.com/en/can-i-ship-index/
+- Tools: shipping calculator, customs duty estimator, volume calculator, transit-time lookup
+
+## Core content topics
+
+- Country-to-China shipping guides (USA, Japan, Korea, Europe, Canada, Australia, SE Asia)
+- City-pair shipping pages (e.g. Miami → Shanghai, San Diego → Hangzhou)
+- Student luggage and graduation-season shipping
+- "Can I ship X to China?" item pages (200+ items)
+- Courier comparisons (DHL vs FedEx vs UPS vs consolidated air freight)
+- Customs, duty, prohibited items, and packing guides
+
+## Contact
+
+- Live chat: https://d.salesmartly.com/fuxikn
+- Email: info@subaog.com
+- Sitemap: https://subaog.com/sitemap.xml

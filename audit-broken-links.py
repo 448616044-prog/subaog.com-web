@@ -13,6 +13,12 @@ def build_valid_urls():
     for f in ROOT.iterdir():
         if f.is_file():
             valid.add("/" + f.name)
+    # 静态资源（图片/CSS/JS/SVG 等）
+    STATIC_EXT = {".svg", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".css", ".js",
+                  ".ico", ".woff", ".woff2", ".ttf", ".xml", ".txt", ".pdf"}
+    for f in ROOT.rglob("*"):
+        if f.is_file() and f.suffix.lower() in STATIC_EXT:
+            valid.add("/" + str(f))
     for f in ROOT.rglob("*.html"):
         p = "/" + str(f)
         if f.name == "index.html":

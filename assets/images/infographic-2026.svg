@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="1200" fill="#F5F7FA"/>
+  <rect width="800" height="180" fill="#0066CC"/>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="800">2026 行李寄中国：渠道费用对比</text>
+  <text x="400" y="120" text-anchor="middle" fill="#ffffff" font-size="18" opacity="0.92">同样 30kg 行李，FedEx 报价 $600，集运专线只要 ¥3000 还包税</text>
+  <text x="400" y="155" text-anchor="middle" fill="#ffffff" font-size="14" opacity="0.8">数据来源：速豹国际物流 subaog.com · 2026 真实成交价</text>
+
+  <!-- 对比条形图区域 -->
+  <text x="60" y="240" fill="#1A1A2E" font-size="22" font-weight="700">三种渠道 30kg 行李费用对比</text>
+
+  <!-- FedEx -->
+  <text x="60" y="300" fill="#1A1A2E" font-size="16" font-weight="600">FedEx / UPS 快件</text>
+  <rect x="60" y="315" width="620" height="36" fill="#E2E8F0" rx="8"/>
+  <rect x="60" y="315" width="620" height="36" fill="#E65100" rx="8"/>
+  <text x="690" y="338" text-anchor="end" fill="#1A1A2E" font-size="16" font-weight="700">$600+</text>
+
+  <!-- USPS -->
+  <text x="60" y="390" fill="#1A1A2E" font-size="16" font-weight="600">USPS（大件不划算）</text>
+  <rect x="60" y="405" width="620" height="36" fill="#E2E8F0" rx="8"/>
+  <rect x="60" y="405" width="300" height="36" fill="#F5A623" rx="8"/>
+  <text x="690" y="428" text-anchor="end" fill="#1A1A2E" font-size="16" font-weight="700">$200+</text>
+
+  <!-- 集运专线 -->
+  <text x="60" y="480" fill="#1A1A2E" font-size="16" font-weight="600">集运空运专线（双清包税）</text>
+  <rect x="60" y="495" width="620" height="36" fill="#E2E8F0" rx="8"/>
+  <rect x="60" y="495" width="290" height="36" fill="#00B900" rx="8"/>
+  <text x="690" y="518" text-anchor="end" fill="#1A1A2E" font-size="16" font-weight="700">¥3000</text>
+
+  <!-- 结论 -->
+  <rect x="60" y="560" width="680" height="90" fill="#E6F0FA" rx="12"/>
+  <text x="80" y="595" fill="#004C99" font-size="17" font-weight="700">省 30-40%，且越重省越多</text>
+  <text x="80" y="625" fill="#1A1A2E" font-size="14">集运 = 一口价包上门取件 + 空运 + 中国报关 + 基础关税 + 末端派送</text>
+
+  <!-- 关键数据卡片 -->
+  <text x="60" y="710" fill="#1A1A2E" font-size="22" font-weight="700">集运专线核心参数</text>
+  <g>
+    <rect x="60" y="730" width="210" height="120" fill="#ffffff" rx="12" stroke="#E2E8F0"/>
+    <text x="165" y="775" text-anchor="middle" fill="#0066CC" font-size="28" font-weight="800">¥100/kg</text>
+    <text x="165" y="810" text-anchor="middle" fill="#64748B" font-size="13">美国/加拿大/澳洲档（20kg 起）</text>
+  </g>
+  <g>
+    <rect x="290" y="730" width="210" height="120" fill="#ffffff" rx="12" stroke="#E2E8F0"/>
+    <text x="395" y="775" text-anchor="middle" fill="#0066CC" font-size="28" font-weight="800">10-15天</text>
+    <text x="395" y="810" text-anchor="middle" fill="#64748B" font-size="13">门到门（双清包税）</text>
+  </g>
+  <g>
+    <rect x="520" y="730" width="220" height="120" fill="#ffffff" rx="12" stroke="#E2E8F0"/>
+    <text x="630" y="775" text-anchor="middle" fill="#0066CC" font-size="28" font-weight="800">20kg起</text>
+    <text x="630" y="810" text-anchor="middle" fill="#64748B" font-size="13">最低起运，不足不收</text>
+  </g>
+
+  <!-- 三档价格表 -->
+  <text x="60" y="910" fill="#1A1A2E" font-size="20" font-weight="700">三档包税价（人民币）</text>
+  <g font-size="14">
+    <rect x="60" y="930" width="680" height="44" fill="#ffffff" rx="8" stroke="#E2E8F0"/>
+    <text x="80" y="958" fill="#1A1A2E" font-weight="600">美/加/墨/澳/新</text>
+    <text x="400" y="958" fill="#1A1A2E">¥100/kg（20-99kg）</text>
+    <text x="620" y="958" fill="#1A1A2E">¥90/kg（100kg+）</text>
+  </g>
+  <g font-size="14">
+    <rect x="60" y="982" width="680" height="44" fill="#ffffff" rx="8" stroke="#E2E8F0"/>
+    <text x="80" y="1010" fill="#1A1A2E" font-weight="600">欧洲</text>
+    <text x="400" y="1010" fill="#1A1A2E">¥90/kg（20-99kg）</text>
+    <text x="620" y="1010" fill="#1A1A2E">¥80/kg（100kg+）</text>
+  </g>
+  <g font-size="14">
+    <rect x="60" y="1034" width="680" height="44" fill="#ffffff" rx="8" stroke="#E2E8F0"/>
+    <text x="80" y="1062" fill="#1A1A2E" font-weight="600">日/韩/泰/新/菲/台/马</text>
+    <text x="400" y="1062" fill="#1A1A2E">¥80/kg（20-99kg）</text>
+    <text x="620" y="1062" fill="#1A1A2E">¥70/kg（100kg+）</text>
+  </g>
+
+  <!-- 底部 CTA -->
+  <rect x="60" y="1110" width="680" height="60" fill="#0066CC" rx="12"/>
+  <text x="400" y="1148" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">免费估价 · 双清包税 · 门到门 — subaog.com</text>
+</svg>
