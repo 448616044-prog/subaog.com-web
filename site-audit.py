@@ -73,8 +73,8 @@ def main():
         # schema 类型
         for st in re.findall(r'"@type":\s*"([A-Za-z]+)"', t):
             schema[st] += 1
-        # FAQPage (有空格)
-        if '"@type": "FAQPage"' in t:
+        # FAQPage (兼容带/不带空格两种 JSON 格式)
+        if re.search(r'"@type":\s*"FAQPage"', t):
             faq_yes += 1
         else:
             faq_missing.append(f)
@@ -119,6 +119,20 @@ def main():
     print("\n【3. 结构化数据 schema 覆盖】")
     for k, v in schema.most_common(12):
         print(f"  · {k}: {v}")
+
+    # JSON-LD 合法性
+    bad_json = 0
+    for f in content_files:
+        txt = f.read_text(encoding="utf-8", errors="ignore")
+        for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', txt, re.S):
+            if not m.strip():
+                continue
+            try:
+                json.loads(m.strip())
+            except Exception:
+                bad_json += 1
+    print("\n【3.5 JSON-LD 合法性】")
+    print(f"  {'✅' if bad_json == 0 else '❌'} 非法 JSON-LD: {bad_json}")
 
     print("\n【4. FAQPage 覆盖率】")
     faq_rate = faq_yes / n * 100 if n else 0
