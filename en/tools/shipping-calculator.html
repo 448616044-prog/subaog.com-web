@@ -131,7 +131,7 @@ a{text-decoration:none;color:inherit}
         <option value="80">SE Asia → China (¥80/kg, luggage line)</option>
       </select>
       <label style="font-size:13px;font-weight:600">Weight (kg)</label>
-      <input type="number" id="weight" value="21" min="1" style="width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin:6px 0 16px">
+      <input type="number" id="weight" value="21" min="21" style="width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin:6px 0 16px">
       <button onclick="calc()" style="width:100%;background:var(--primary);color:#fff;border:none;padding:13px;border-radius:24px;font-weight:700;font-size:15px;cursor:pointer">Calculate</button>
       <div id="result" style="margin-top:16px;padding:16px;background:var(--primary-light);border-radius:10px;text-align:center;display:none"></div>
     </div>
@@ -139,7 +139,7 @@ a{text-decoration:none;color:inherit}
   <section class="cta-section"><div class="container">
     <h2 style="font-size:20px;font-weight:700;margin-bottom:12px">Tax-inclusive channel — calculation rules</h2>
     <p style="font-size:14px;color:#475569;line-height:1.7;margin-bottom:8px">
-      <strong>Minimum charge: 20 kg</strong> — shipments under 20 kg are billed as 20 kg.<br>
+      <strong>Minimum 21 kg (actual or volumetric weight ≥21 kg required; below not accepted)</strong> — shipments under 21 kg are not accepted.<br>
       <strong>Tax-inclusive door-to-door pricing (3 tiers):</strong><br>
       · Tier 1 (USA / Canada / Mexico / Australia / NZ): 20–99 kg ¥100/kg, 100 kg+ ¥90/kg<br>
       · Tier 2 (Europe): 20–99 kg ¥90/kg, 100 kg+ ¥80/kg<br>
@@ -155,10 +155,10 @@ a{text-decoration:none;color:inherit}
       var r = parseFloat(document.getElementById('route').value);
       var w = parseFloat(document.getElementById('weight').value);
       if (!w || w < 1) { alert('Please enter a valid weight.'); return; }
-      if (w < 20) w = 20;
+      if (w < 21) { document.getElementById('result').style.display = 'block'; document.getElementById('result').innerHTML = '<div style="font-size:1.6rem;font-weight:800;color:var(--accent)">Not accepted</div><div style="font-size:13px;color:var(--text-secondary)">Minimum 21 kg (actual or volumetric). Below 21 kg not accepted.</div>'; return; }
       var est = Math.round(r * w);
       document.getElementById('result').style.display = 'block';
-      document.getElementById('result').innerHTML = '<div style="font-size:1.8rem;font-weight:800;color:var(--primary)">¥' + est + '</div><div style="font-size:13px;color:var(--text-secondary)">Estimated all-in for ' + w + ' kg · 20kg minimum · tax-inclusive door-to-door · 10–15 working days</div>';
+      document.getElementById('result').innerHTML = '<div style="font-size:1.8rem;font-weight:800;color:var(--primary)">¥' + est + '</div><div style="font-size:13px;color:var(--text-secondary)">Estimated all-in for ' + w + ' kg · 21kg minimum · tax-inclusive door-to-door · 10–15 working days</div>';
     }
   </script>
   <footer class="footer">
