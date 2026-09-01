@@ -23,8 +23,8 @@
 /student-luggage/* /zh-cn/student-luggage/:splat  301
 /usa-moving-to-china/* /zh-cn/usa-moving-to-china/:splat 301
 
-# Bare directory → trailing-slash canonical
-/about             /zh-cn/about.html    301
-/faq               /zh-cn/faq.html      301
-/contact           /zh-cn/contact.html  301
-/pricing           /zh-cn/pricing.html  301
+# Bare path → clean URL (matches canonical)
+/about             /zh-cn/about         301
+/faq               /zh-cn/faq           301
+/contact           /zh-cn/contact       301
+/pricing           /zh-cn/pricing       301
