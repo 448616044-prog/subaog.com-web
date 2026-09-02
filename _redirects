@@ -28,3 +28,8 @@
 /faq               /zh-cn/faq           301
 /contact           /zh-cn/contact       301
 /pricing           /zh-cn/pricing       301
+
+# .html → clean URL 统一规范化（消除 Google 双重索引 / 权重分裂）
+# 注意：index.html 规则必须在 *.html 之前（贪婪 splat 顺序优先）
+/*/index.html      /:splat/             301
+/*.html            /:splat              301
