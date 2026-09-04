@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-09-04T13:55:30.480013",
+  "pulled_at": "2026-09-04T23:14:09.375124",
   "site": "sc-domain:subaog.com",
   "data": {
     "queries": [
@@ -8,9 +8,9 @@
           "\"dhl to china\""
         ],
         "clicks": 0,
-        "impressions": 12,
+        "impressions": 13,
         "ctr": 0,
-        "position": 13.833333333333334
+        "position": 13.692307692307692
       },
       {
         "keys": [
@@ -134,9 +134,9 @@
           "best way to ship to china"
         ],
         "clicks": 0,
-        "impressions": 19,
+        "impressions": 24,
         "ctr": 0,
-        "position": 44.8421052631579
+        "position": 40.833333333333336
       },
       {
         "keys": [
@@ -152,27 +152,27 @@
           "buy and ship from us to china"
         ],
         "clicks": 0,
-        "impressions": 34,
+        "impressions": 39,
         "ctr": 0,
-        "position": 41.44117647058823
+        "position": 40.94871794871795
       },
       {
         "keys": [
           "buy from us ship to china"
         ],
         "clicks": 0,
-        "impressions": 54,
+        "impressions": 65,
         "ctr": 0,
-        "position": 38.407407407407405
+        "position": 38.815384615384616
       },
       {
         "keys": [
           "buy online from us uk china"
         ],
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 3,
         "ctr": 0,
-        "position": 52.5
+        "position": 55.333333333333336
       },
       {
         "keys": [
@@ -251,9 +251,9 @@
           "can you ship hand sanitizer to china"
         ],
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 3,
         "ctr": 0,
-        "position": 61.5
+        "position": 62.333333333333336
       },
       {
         "keys": [
@@ -602,18 +602,18 @@
           "cheapest way to ship to china from usa"
         ],
         "clicks": 0,
-        "impressions": 6,
+        "impressions": 8,
         "ctr": 0,
-        "position": 43.666666666666664
+        "position": 48.625
       },
       {
         "keys": [
           "china & glass shipping atlanta"
         ],
         "clicks": 0,
-        "impressions": 11,
+        "impressions": 12,
         "ctr": 0,
-        "position": 24.272727272727273
+        "position": 23.083333333333332
       },
       {
         "keys": [
@@ -632,6 +632,15 @@
         "impressions": 1,
         "ctr": 0,
         "position": 63
+      },
+      {
+        "keys": [
+          "china import tax calculator"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 61
       },
       {
         "keys": [
@@ -815,21 +824,39 @@
       },
       {
         "keys": [
-          "courier to china"
+          "courier service to china"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 60.666666666666664
+      },
+      {
+        "keys": [
+          "courier services to china"
         ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
-        "position": 78.5
+        "position": 91
+      },
+      {
+        "keys": [
+          "courier to china"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 73.8
       },
       {
         "keys": [
           "cross-border logistics cost"
         ],
         "clicks": 0,
-        "impressions": 15,
+        "impressions": 16,
         "ctr": 0,
-        "position": 86.86666666666666
+        "position": 86.8125
       },
       {
         "keys": [
@@ -875,33 +902,6 @@
         "impressions": 1,
         "ctr": 0,
         "position": 45
-      },
-      {
-        "keys": [
-          "dhl vs fedex vs ups"
-        ],
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 71
-      },
-      {
-        "keys": [
-          "does amazon deliver in china"
-        ],
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 9.5
-      },
-      {
-        "keys": [
-          "does amazon deliver to china"
-        ],
-        "clicks": 0,
-        "impressions": 8,
-        "ctr": 0,
-        "position": 13.75
       }
     ],
     "pages": [
@@ -919,18 +919,18 @@
           "https://subaog.com/"
         ],
         "clicks": 1,
-        "impressions": 27,
-        "ctr": 0.037037037037037035,
-        "position": 21.59259259259259
+        "impressions": 28,
+        "ctr": 0.03571428571428571,
+        "position": 21.071428571428573
       },
       {
         "keys": [
           "https://subaog.com/en/blog/can-i-ship-cosmetics-to-china"
         ],
         "clicks": 1,
-        "impressions": 12,
-        "ctr": 0.08333333333333333,
-        "position": 14.083333333333334
+        "impressions": 14,
+        "ctr": 0.07142857142857142,
+        "position": 13.642857142857142
       },
       {
         "keys": [
@@ -973,9 +973,9 @@
           "https://subaog.com/zh-cn/blog/ebay-ship-to-china"
         ],
         "clicks": 1,
-        "impressions": 5,
-        "ctr": 0.2,
-        "position": 5.4
+        "impressions": 6,
+        "ctr": 0.16666666666666666,
+        "position": 4.833333333333334
       },
       {
         "keys": [
@@ -1252,18 +1252,18 @@
           "https://subaog.com/en/blog/best-courier-for-china-shipping"
         ],
         "clicks": 0,
-        "impressions": 38,
+        "impressions": 41,
         "ctr": 0,
-        "position": 72.6842105263158
+        "position": 73.46341463414635
       },
       {
         "keys": [
           "https://subaog.com/en/blog/can-i-ship-baby-formula-to-china"
         ],
         "clicks": 0,
-        "impressions": 14,
+        "impressions": 15,
         "ctr": 0,
-        "position": 22.642857142857142
+        "position": 21.533333333333335
       },
       {
         "keys": [
@@ -1288,9 +1288,9 @@
           "https://subaog.com/en/blog/can-i-ship-coffee-to-china"
         ],
         "clicks": 0,
-        "impressions": 5,
+        "impressions": 6,
         "ctr": 0,
-        "position": 37.2
+        "position": 31.833333333333332
       },
       {
         "keys": [
@@ -1333,9 +1333,9 @@
           "https://subaog.com/en/blog/can-i-ship-luxury-bags-to-china"
         ],
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 4,
         "ctr": 0,
-        "position": 50.333333333333336
+        "position": 38.5
       },
       {
         "keys": [
@@ -1360,9 +1360,9 @@
           "https://subaog.com/en/blog/can-i-ship-musical-instruments-to-china"
         ],
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 61
+        "position": 35.5
       },
       {
         "keys": [
@@ -1405,18 +1405,18 @@
           "https://subaog.com/en/blog/can-i-ship-snacks-to-china"
         ],
         "clicks": 0,
-        "impressions": 23,
+        "impressions": 24,
         "ctr": 0,
-        "position": 13.956521739130435
+        "position": 13.833333333333334
       },
       {
         "keys": [
           "https://subaog.com/en/blog/can-i-ship-supplements-to-china"
         ],
         "clicks": 0,
-        "impressions": 59,
+        "impressions": 64,
         "ctr": 0,
-        "position": 25.677966101694917
+        "position": 24.171875
       },
       {
         "keys": [
@@ -1441,9 +1441,9 @@
           "https://subaog.com/en/blog/can-i-ship-wine-to-china"
         ],
         "clicks": 0,
-        "impressions": 20,
+        "impressions": 22,
         "ctr": 0,
-        "position": 35.5
+        "position": 33.27272727272727
       },
       {
         "keys": [
@@ -1495,9 +1495,9 @@
           "https://subaog.com/en/blog/dhl-vs-fedex-vs-ups-china"
         ],
         "clicks": 0,
-        "impressions": 39,
+        "impressions": 40,
         "ctr": 0,
-        "position": 47.30769230769231
+        "position": 46.425
       },
       {
         "keys": [
@@ -1576,18 +1576,18 @@
           "https://subaog.com/en/blog/how-to-ship-from-usa-to-china"
         ],
         "clicks": 0,
-        "impressions": 169,
+        "impressions": 192,
         "ctr": 0,
-        "position": 63.75739644970414
+        "position": 61.838541666666664
       },
       {
         "keys": [
           "https://subaog.com/en/blog/international-customs-duty-guide"
         ],
         "clicks": 0,
-        "impressions": 36,
+        "impressions": 37,
         "ctr": 0,
-        "position": 61.916666666666664
+        "position": 60.486486486486484
       },
       {
         "keys": [
@@ -1603,9 +1603,9 @@
           "https://subaog.com/en/blog/japan-to-china-shipping-guide"
         ],
         "clicks": 0,
-        "impressions": 18,
+        "impressions": 22,
         "ctr": 0,
-        "position": 49.388888888888886
+        "position": 41.63636363636363
       },
       {
         "keys": [
@@ -1675,18 +1675,18 @@
           "https://subaog.com/en/blog/us-shopping-forwarding-guide"
         ],
         "clicks": 0,
-        "impressions": 7,
+        "impressions": 8,
         "ctr": 0,
-        "position": 30.714285714285715
+        "position": 29.875
       },
       {
         "keys": [
           "https://subaog.com/en/blog/us-shopping-forwarding-guide.html"
         ],
         "clicks": 0,
-        "impressions": 46,
+        "impressions": 49,
         "ctr": 0,
-        "position": 42.869565217391305
+        "position": 43
       },
       {
         "keys": [
@@ -1702,18 +1702,18 @@
           "https://subaog.com/en/blog/usa-to-china-cheapest-way"
         ],
         "clicks": 0,
-        "impressions": 131,
+        "impressions": 140,
         "ctr": 0,
-        "position": 58.50381679389313
+        "position": 57.385714285714286
       },
       {
         "keys": [
           "https://subaog.com/en/blog/usa-to-china-customs-duty"
         ],
         "clicks": 0,
-        "impressions": 6,
+        "impressions": 7,
         "ctr": 0,
-        "position": 52.666666666666664
+        "position": 45.857142857142854
       },
       {
         "keys": [
@@ -1765,9 +1765,9 @@
           "https://subaog.com/en/blog/usa-to-china-shipping-cost"
         ],
         "clicks": 0,
-        "impressions": 152,
+        "impressions": 162,
         "ctr": 0,
-        "position": 75.03947368421052
+        "position": 75.22222222222223
       },
       {
         "keys": [
@@ -1792,9 +1792,9 @@
           "https://subaog.com/en/blog/usps-to-china-complete-guide"
         ],
         "clicks": 0,
-        "impressions": 69,
+        "impressions": 75,
         "ctr": 0,
-        "position": 55.15942028985507
+        "position": 57.48
       },
       {
         "keys": [
@@ -1812,18 +1812,18 @@
           "MOBILE"
         ],
         "clicks": 8,
-        "impressions": 652,
-        "ctr": 0.012269938650306749,
-        "position": 19.48159509202454
+        "impressions": 702,
+        "ctr": 0.011396011396011397,
+        "position": 19.501424501424502
       },
       {
         "keys": [
           "DESKTOP"
         ],
         "clicks": 3,
-        "impressions": 2081,
-        "ctr": 0.0014416146083613647,
-        "position": 58.75636713118693
+        "impressions": 2158,
+        "ctr": 0.0013901760889712697,
+        "position": 58.402224281742356
       },
       {
         "keys": [
@@ -1841,36 +1841,36 @@
           "usa"
         ],
         "clicks": 7,
-        "impressions": 1056,
-        "ctr": 0.006628787878787879,
-        "position": 35.44412878787879
+        "impressions": 1129,
+        "ctr": 0.006200177147918512,
+        "position": 36.02568644818423
       },
       {
         "keys": [
           "chn"
         ],
         "clicks": 2,
-        "impressions": 65,
-        "ctr": 0.03076923076923077,
-        "position": 7.323076923076923
+        "impressions": 67,
+        "ctr": 0.029850746268656716,
+        "position": 7.313432835820896
       },
       {
         "keys": [
           "jpn"
         ],
         "clicks": 1,
-        "impressions": 20,
-        "ctr": 0.05,
-        "position": 7.55
+        "impressions": 25,
+        "ctr": 0.04,
+        "position": 9.64
       },
       {
         "keys": [
           "kor"
         ],
         "clicks": 1,
-        "impressions": 12,
-        "ctr": 0.08333333333333333,
-        "position": 10.833333333333334
+        "impressions": 14,
+        "ctr": 0.07142857142857142,
+        "position": 10.071428571428571
       },
       {
         "keys": [
@@ -1895,9 +1895,9 @@
           "aus"
         ],
         "clicks": 0,
-        "impressions": 57,
+        "impressions": 59,
         "ctr": 0,
-        "position": 61.824561403508774
+        "position": 60.05084745762712
       },
       {
         "keys": [
@@ -1949,18 +1949,18 @@
           "can"
         ],
         "clicks": 0,
-        "impressions": 40,
+        "impressions": 46,
         "ctr": 0,
-        "position": 49.275
+        "position": 47.869565217391305
       },
       {
         "keys": [
           "che"
         ],
         "clicks": 0,
-        "impressions": 7,
+        "impressions": 9,
         "ctr": 0,
-        "position": 25.285714285714285
+        "position": 29
       },
       {
         "keys": [
@@ -1981,14 +1981,14 @@
     "queries_with_data": 100,
     "pages_with_data": 100,
     "total_clicks_q": 0,
-    "total_impr_q": 345,
+    "total_impr_q": 371,
     "total_clicks_p": 12,
-    "total_impr_p": 2025
+    "total_impr_p": 2103
   },
   "position_buckets": {
     "top3": 2,
-    "top10": 4,
-    "11_30": 5,
-    "31_100": 89
+    "top10": 3,
+    "11_30": 4,
+    "31_100": 91
   }
 }

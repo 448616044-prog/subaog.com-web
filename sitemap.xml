@@ -480,6 +480,8 @@
   <url><loc>https://subaog.com/zh-cn/pricing</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subaog.com/zh-cn/report/usa-china-shipping-cost-report-2026</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://subaog.com/zh-cn/routes/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subaog.com/zh-cn/city-pairs</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
   <url><loc>https://subaog.com/zh-cn/seasia-to-china/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://subaog.com/zh-cn/seasia-to-china/malaysia/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://subaog.com/zh-cn/seasia-to-china/malaysia/moving/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -498,6 +500,7 @@
   <url><loc>https://subaog.com/zh-cn/tools/shipping-calculator</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subaog.com/zh-cn/tools/transit-time</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subaog.com/zh-cn/tools/volume-calculator</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://subaog.com/zh-cn/tools/package-consolidation-calculator</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subaog.com/zh-cn/usa-moving-to-china/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://subaog.com/zh-cn/usa-to-china/atlanta/auto-parts/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://subaog.com/zh-cn/usa-to-china/atlanta/bicycles/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -1399,6 +1402,8 @@
   <url><loc>https://subaog.com/en/pricing</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subaog.com/en/report/usa-china-shipping-cost-report-2026</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://subaog.com/en/routes/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://subaog.com/en/city-pairs</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
   <url><loc>https://subaog.com/en/seasia-to-china/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://subaog.com/en/seasia-to-china/malaysia/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://subaog.com/en/seasia-to-china/malaysia/moving/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1417,6 +1422,7 @@
   <url><loc>https://subaog.com/en/tools/shipping-calculator</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subaog.com/en/tools/transit-time</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subaog.com/en/tools/volume-calculator</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://subaog.com/en/tools/package-consolidation-calculator</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://subaog.com/en/usa-moving-to-china/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://subaog.com/en/usa-to-china/atlanta/auto-parts/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://subaog.com/en/usa-to-china/atlanta/bicycles/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>

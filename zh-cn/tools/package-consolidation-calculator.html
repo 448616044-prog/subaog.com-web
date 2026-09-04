@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="applicable-device" content="pc,mobile">
+  <title>合箱集运计算器2026 | 多个包裹合并省运费 | 速豹国际</title>
+  <meta name="description" content="合箱集运计算器：输入多个包裹的长宽高和重量，自动对比单独寄与合箱的计费重量，看能省多少运费。免费工具">
+  <link rel="canonical" href="https://subaog.com/zh-cn/tools/package-consolidation-calculator">
+  <link rel="alternate" hreflang="zh-CN" href="https://subaog.com/zh-cn/tools/package-consolidation-calculator">
+  <link rel="alternate" hreflang="en" href="https://subaog.com/en/tools/package-consolidation-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://subaog.com/zh-cn/tools/package-consolidation-calculator">
+  <meta property="og:url" content="https://subaog.com/zh-cn/tools/package-consolidation-calculator">
+  <!-- hreflang:auto:subaog-multilang --> <!-- canonical:auto:subaog-multilang -->
+  <meta property="og:title" content="合箱集运计算器 | 多个包裹合并省运费">
+  <meta property="og:description" content="合箱集运计算工具：输入多个包裹尺寸重量，对比单独寄与合箱的计费重量。免费工具。">
+  <meta property="og:image" content="https://subaog.com/assets/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  
+  <meta property="og:locale" content="zh_CN">
+  <meta name="lastmod" content="2026-08-07">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"合箱集运计算器","url":"https://subaog.com/tools/package-consolidation-calculator","applicationCategory":"UtilityApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"速豹国际物流","url":"https://subaog.com"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://subaog.com/"},{"@type":"ListItem","position":2,"name":"免费工具","item":"https://subaog.com/tools/"},{"@type":"ListItem","position":3,"name":"合箱集运计算器","item":"https://subaog.com/tools/package-consolidation-calculator"}]}</script>
+  <style>
+    :root{--primary:#0066CC;--primary-dark:#004C99;--primary-light:#E6F0FA;--accent:#E65100;--accent-dark:#CC5200;--green:#00B900;--bg:#F5F7FA;--bg-white:#FFFFFF;--text:#1A1A2E;--text-secondary:#64748B;--border:#E2E8F0;--radius:10px;--radius-lg:16px;--radius-pill:24px;--shadow-sm:0 1px 3px rgba(0,0,0,0.06);--shadow-md:0 4px 16px rgba(0,0,0,0.08);--nav-height:68px}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif;color:var(--text);line-height:1.8;font-size:16px;background:var(--bg)}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    .header{position:fixed;top:0;left:0;right:0;height:var(--nav-height);background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);z-index:1000;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+    .header .container{display:flex;align-items:center;justify-content:space-between;height:100%}
+    .logo{font-size:20px;font-weight:700;color:var(--primary)}
+    .nav{display:flex;gap:4px}
+    .nav a{padding:7px 14px;font-size:13px;font-weight:500;color:var(--text-secondary);border-radius:var(--radius-pill)}
+    .nav a:hover{color:var(--primary);background:var(--primary-light)}
+    .nav a.active{color:var(--primary);background:var(--primary-light)}
+    .tool-hero{background:linear-gradient(135deg,#0066CC,#004C99);color:#fff;padding:100px 24px 48px;text-align:center}
+    .tool-hero h1{font-size:clamp(1.4rem,2.5vw,2rem);margin-bottom:8px}
+    .tool-hero .subtitle{opacity:.9;max-width:500px;margin:0 auto}
+    .tool-body{max-width:720px;margin:0 auto;padding:32px 24px 64px}
+    .tool-card{background:var(--bg-white);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-md);border:1px solid var(--border)}
+    .form-group{margin-bottom:16px}
+    .form-group label{display:block;font-size:13px;color:var(--text-secondary);margin-bottom:4px;font-weight:500}
+    .form-group input,.form-group select{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:var(--radius);font-size:15px;font-family:inherit}
+    .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--primary)}
+    .form-row{display:flex;gap:12px}
+    .form-row .form-group{flex:1}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--accent);color:#fff;padding:14px 32px;border-radius:var(--radius-pill);font-weight:600;font-size:16px;transition:all .2s;border:none;cursor:pointer;width:100%}
+    .btn-primary:hover{background:var(--accent-dark)}
+    .result-box{margin-top:20px;padding:20px;background:var(--primary-light);border-radius:var(--radius);text-align:center;display:none}
+    .result-box.show{display:block}
+    .result-box .big-num{font-size:2rem;font-weight:700;color:var(--primary)}
+    .result-box .detail{font-size:13px;color:var(--text-secondary);margin-top:4px}
+    .tool-info{padding:24px 0}
+    .tool-info h2{font-size:1.3rem;color:var(--primary);margin:32px 0 12px}
+    .tool-info p{color:var(--text-secondary);margin:8px 0}
+    .tool-info ul,.tool-info ol{padding-left:24px;color:var(--text-secondary);margin:8px 0}
+    .footer{background:#1A1A2E;color:#fff;padding:48px 24px 24px;margin-top:64px}
+    .footer h4{font-size:13px;color:#ccc;margin-bottom:12px}
+    .footer a,.footer p{display:block;color:#999;font-size:12px;margin-bottom:6px;transition:color .2s}
+    .footer a:hover{color:#fff}
+    @media(max-width:768px){.form-row{flex-direction:column}}
+
+    /* lang-switch (auto-injected by inject-multilang.py) */
+    .lang-switch{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--primary);border:1.5px solid var(--primary-light);border-radius:var(--radius-pill);background:#fff;transition:all .2s;white-space:nowrap;cursor:pointer;text-decoration:none}
+    .lang-switch:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+    .lang-switch .globe{font-size:14px}
+    .lang-switch .sep{color:var(--border);margin:0 2px;font-weight:400}
+    .lang-switch .lang-cn{color:var(--primary)}
+    .lang-switch:hover .lang-cn,.lang-switch:hover .sep{color:#fff}
+    @media(max-width:768px){.lang-switch{width:100%;justify-content:flex-start;padding:10px 16px;border-radius:var(--radius);border-color:var(--border);font-size:14px}}
+
+
+    /* lang-switch (auto-injected by inject-multilang.py) */
+    .lang-switch{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--primary);border:1.5px solid var(--primary-light);border-radius:var(--radius-pill);background:#fff;transition:all .2s;white-space:nowrap;cursor:pointer;text-decoration:none}
+    .lang-switch:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+    .lang-switch .globe{font-size:14px}
+    .lang-switch .sep{color:var(--border);margin:0 2px;font-weight:400}
+    .lang-switch .lang-cn{color:var(--primary)}
+    .lang-switch:hover .lang-cn,.lang-switch:hover .sep{color:#fff}
+    @media(max-width:768px){.lang-switch{width:100%;justify-content:flex-start;padding:10px 16px;border-radius:var(--radius);border-color:var(--border);font-size:14px}}
+
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJGPMS9MOB"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DJGPMS9MOB');
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "合箱能省多少运费？", "acceptedAnswer": {"@type": "Answer", "text": "小包裹多时合箱最划算——只需付一次首重而非多次，通常能省 30-50% 的计费重量。"}}, {"@type": "Question", "name": "合箱会改变体积重吗？", "acceptedAnswer": {"@type": "Answer", "text": "会。合并后体积重 = 总体积÷5000。拆掉原包装重新紧凑打包，能降低总体积和计费重量。"}}, {"@type": "Question", "name": "什么时候该合箱？", "acceptedAnswer": {"@type": "Answer", "text": "3 个以上包裹、或单个包裹不足 1kg（首重占大头）时，合箱最划算。"}}]}</script>
+</head>
+<body>
+  <header class="header"><div class="container">
+    <a href="/zh-cn/" class="logo"><img src="/assets/images/logo.png" alt="速豹回国物流" style="height:63px;width:auto;display:block;" fetchpriority="high" decoding="async"></a>
+    <nav class="nav">
+        <a href="/">首页</a>
+        <a href="/zh-cn/usa-to-china/">美国寄中国</a>
+        <a href="/zh-cn/pricing">运费报价</a>
+        <a href="/zh-cn/tools/" class="active">免费工具</a>
+        <a href="/zh-cn/blog/">攻略</a>
+        <a href="/zh-cn/contact">咨询</a><!-- lang-switch:auto:subaog-multilang -->
+      <a href="https://subaog.com/en/tools/package-consolidation-calculator" class="lang-switch" title="Switch to English" hreflang="en">
+        <span class="globe">🌐</span>
+        <span class="lang-cn">中文</span>
+        <span class="sep">/</span>
+        <span>English</span>
+      </a>
+</nav>
+  </div></header>
+  <section class="tool-hero"><div class="container">
+    <h1>合箱集运计算器</h1><p class="subtitle">多个包裹合并成一箱，看能省多少运费</p>
+  </div></section>
+  <div class="tool-body">
+    
+        <div class="tool-card">
+          <p style="font-size:13px;color:var(--text-secondary);margin-bottom:12px">输入最多 3 个包裹，对比单独寄与合箱的计费重量。</p>
+          <div id="parcels"></div>
+          <button onclick="addParcel()" style="width:100%;background:var(--primary-light);color:var(--primary);border:1px dashed var(--primary);padding:10px;border-radius:10px;font-weight:600;font-size:14px;cursor:pointer;margin-bottom:14px">+ 添加包裹</button>
+          <button class="btn-primary" onclick="calcConsolidation()">计算能省多少</button>
+          <div class="result-box" id="result"><div class="big-num" id="save-txt">--</div><div class="detail" id="detail-txt"></div></div>
+        </div>
+        <script>
+        var parcelCount = 0;
+        function addParcel(){
+          if (parcelCount >= 3) return;
+          parcelCount++;
+          var n = parcelCount;
+          var html = '<div style="border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:12px">' +
+            '<div style="font-weight:700;font-size:14px;margin-bottom:8px">包裹 ' + n + '</div>' +
+            '<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px">' +
+            '<div><label style="font-size:12px;font-weight:600">长cm</label><input type="number" id="p' + n + 'l" value="30" style="width:100%;padding:9px;border:1px solid var(--border);border-radius:8px;font-size:14px;margin:4px 0"></div>' +
+            '<div><label style="font-size:12px;font-weight:600">宽cm</label><input type="number" id="p' + n + 'w" value="20" style="width:100%;padding:9px;border:1px solid var(--border);border-radius:8px;font-size:14px;margin:4px 0"></div>' +
+            '<div><label style="font-size:12px;font-weight:600">高cm</label><input type="number" id="p' + n + 'h" value="15" style="width:100%;padding:9px;border:1px solid var(--border);border-radius:8px;font-size:14px;margin:4px 0"></div>' +
+            '<div><label style="font-size:12px;font-weight:600">kg</label><input type="number" id="p' + n + 'kg" value="2" style="width:100%;padding:9px;border:1px solid var(--border);border-radius:8px;font-size:14px;margin:4px 0"></div>' +
+            '</div></div>';
+          document.getElementById('parcels').insertAdjacentHTML('beforeend', html);
+        }
+        function calcConsolidation(){
+          var parcels = [];
+          for (var i=1;i<=3;i++){
+            var l=parseFloat(document.getElementById('p'+i+'l').value);
+            var w=parseFloat(document.getElementById('p'+i+'w').value);
+            var h=parseFloat(document.getElementById('p'+i+'h').value);
+            var kg=parseFloat(document.getElementById('p'+i+'kg').value);
+            if(l&&w&&h&&kg) parcels.push({l:l,w:w,h:h,kg:kg});
+          }
+          if(!parcels.length){ alert('请至少输入一个包裹。'); return; }
+          var separate=0, totalKg=0, totalVol=0;
+          parcels.forEach(function(p){
+            var vw=p.l*p.w*p.h/5000;
+            separate += Math.max(p.kg, vw);
+            totalKg += p.kg; totalVol += p.l*p.w*p.h;
+          });
+          var combined = Math.max(totalKg, totalVol/5000);
+          var saving = separate - combined;
+          var pct = separate>0 ? (saving/separate*100) : 0;
+          document.getElementById('save-txt').textContent = '省 ' + (saving>0?saving.toFixed(2):'0.00') + ' kg（' + Math.max(0,pct).toFixed(0) + '%）';
+          document.getElementById('detail-txt').textContent = '单独寄：' + separate.toFixed(2) + ' kg 计费重 ｜ 合箱：' + combined.toFixed(2) + ' kg';
+          document.getElementById('result').classList.add('show');
+        }
+        addParcel();
+        </script>
+        <div class="tool-info">
+          <h2>什么是合箱集运？</h2>
+          <p>把多个包裹（不同网店、不同时间购买）合并到一个箱子一起寄，只需付一次首重，比分开寄更省运费。</p>
+          <p><strong>举例：</strong>3 个 1kg 小包分开寄，每个都要付一次首重；合箱后 3kg 一起寄，只付一次首重。</p>
+          <h2>合箱能省多少？</h2>
+          <p>小包裹越多越明显，通常能省 30-50% 运费。合并后体积重 = 总体积÷5000，拆掉原包装重新紧凑打包能进一步降低计费重。</p>
+        </div>
+  </div>
+  
+  <section style="max-width:1100px;margin:40px auto;padding:0 24px"><h2 style="font-size:22px;font-weight:700;margin-bottom:16px">常见问题</h2><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">合箱能省多少运费？</h3><p style="margin:0;color:#64748B;line-height:1.7">小包裹多时合箱最划算——只需付一次首重而非多次，通常能省 30-50% 的计费重量。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">合箱会改变体积重吗？</h3><p style="margin:0;color:#64748B;line-height:1.7">会。合并后体积重 = 总体积÷5000。拆掉原包装重新紧凑打包，能降低总体积和计费重量。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">什么时候该合箱？</h3><p style="margin:0;color:#64748B;line-height:1.7">3 个以上包裹、或单个包裹不足 1kg（首重占大头）时，合箱最划算。</p></div></section>
+  <footer class="footer">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px">
+      <div><h4>速豹国际物流</h4><p>美国寄中国专线物流专家</p></div>
+      <div><h4>核心服务</h4><a href="/zh-cn/usa-to-china/">美国寄中国</a><a href="/zh-cn/student-luggage/">留学生行李</a><a href="/zh-cn/usa-moving-to-china/">搬家回国</a></div>
+      <div><h4>免费工具</h4><a href="/zh-cn/tools/shipping-calculator"">运费计算器</a><a href="/zh-cn/tools/customs-duty-calculator"">关税估算器</a><a href="/zh-cn/tools/can-i-ship"">能不能寄</a></div>
+      <div><h4>联系我们</h4><p>在线客服：在线咨询</p><p>info@subaog.com</p></div>
+    </div>
+    <div style="text-align:center;padding-top:24px;margin-top:24px;border-top:1px solid rgba(255,255,255,0.1);font-size:11px;color:#666"><p>&copy; 2026 速豹国际物流 | <a href="/sitemap.xml" style="color:#666">Sitemap</a></p></div>
+  <div><h4>更多资源</h4><a href="/zh-cn/routes/">全部线路</a><a href="/zh-cn/can-i-ship-index/">能不能寄·分类</a><a href="/zh-cn/tools/customs-duty-calculator">关税估算</a><a href="/zh-cn/tools/volume-calculator">材积计算</a><a href="/zh-cn/tools/package-consolidation-calculator">合箱计算</a><a href="/zh-cn/tools/transit-time">时效查询</a></div>
+  
+</footer>
+</body></html>
