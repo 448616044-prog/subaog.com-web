@@ -33,3 +33,15 @@
 # 注意：index.html 规则必须在 *.html 之前（贪婪 splat 顺序优先）
 /*/index.html      /:splat/             301
 /*.html            /:splat              301
+
+# === 2026-09-05 禁运品类 301 重定向 ===
+/en/australia-to-china/*/milk-powder/  /en/australia-to-china/$1/  301
+/zh-cn/australia-to-china/*/milk-powder/  /zh-cn/australia-to-china/$1/  301
+/en/australia-to-china/*/wine/  /en/australia-to-china/$1/  301
+/zh-cn/australia-to-china/*/wine/  /zh-cn/australia-to-china/$1/  301
+/en/australia-to-china/*/supplements/  /en/australia-to-china/$1/  301
+/zh-cn/australia-to-china/*/supplements/  /zh-cn/australia-to-china/$1/  301
+/en/europe-to-china/*/milk-powder/  /en/europe-to-china/$1/  301
+/zh-cn/europe-to-china/*/milk-powder/  /zh-cn/europe-to-china/$1/  301
+/en/europe-to-china/*/wine/  /en/europe-to-china/$1/  301
+/zh-cn/europe-to-china/*/wine/  /zh-cn/europe-to-china/$1/  301

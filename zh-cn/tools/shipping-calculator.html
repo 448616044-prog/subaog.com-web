@@ -90,7 +90,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-DJGPMS9MOB');
 </script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "运费怎么算？", "acceptedAnswer": {"@type": "Answer", "text": "选出发地档位（美加澳/欧洲/日韩东南亚）和重量，自动算双清包税总价。最低起运 20kg。"}}, {"@type": "Question", "name": "最低起运多少？", "acceptedAnswer": {"@type": "Answer", "text": "最低 20kg（实重或体积重≥20kg 方可收寄），不足 20kg 不予出运。"}}, {"@type": "Question", "name": "怎么用运费计算器？", "acceptedAnswer": {"@type": "Answer", "text": "选出发地档位 → 输入重量（kg）→ 自动出总价。重量 <20kg 会提示不予收寄。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "运费怎么算？", "acceptedAnswer": {"@type": "Answer", "text": "选出发地档位（美加澳/欧洲/日韩东南亚）和重量，自动算双清包税总价。最低起运 21kg。"}}, {"@type": "Question", "name": "最低起运多少？", "acceptedAnswer": {"@type": "Answer", "text": "最低 21kg（实重或体积重≥21kg 方可收寄），不足 21kg 不予出运。"}}, {"@type": "Question", "name": "怎么用运费计算器？", "acceptedAnswer": {"@type": "Answer", "text": "选出发地档位 → 输入重量（kg）→ 自动出总价。重量 <21kg 会提示不予收寄。"}}]}</script>
 </head>
 <body>
   <header class="header"><div class="container">
@@ -121,17 +121,17 @@ gtag('config', 'G-DJGPMS9MOB');
             <div class="form-group"><label>目的城市</label><select id="to"><option>北京</option><option>上海</option><option>广州</option><option>深圳</option><option>成都</option><option>杭州</option></select></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>重量 (kg)</label><input type="number" id="weight" min="20" max="500" placeholder="20" value="20" autocomplete="off"></div>
+            <div class="form-group"><label>重量 (kg)</label><input type="number" id="weight" min="21" max="500" placeholder="21" value="21" autocomplete="off"></div>
             <div class="form-group"><label>出发档位</label><select id="tier"><option value="1">档1 美/加/墨/澳/新 (¥100/kg)</option><option value="2">档2 欧洲 (¥90/kg)</option><option value="3">档3 日/韩/泰/东南亚 (¥80/kg)</option></select></div>
         </div>
-        <script>function calc(){var w=parseFloat(document.getElementById('weight').value);var t=parseInt(document.getElementById('tier').value);if(!w||w<20){document.getElementById('price').textContent='—';document.getElementById('detail').textContent='最低起运 20kg，不足 20kg 不予收寄';document.getElementById('result').classList.add('show');return;}var p20={1:100,2:90,3:80}[t];var p100={1:90,2:80,3:70}[t];var p=w<100?p20:p100;var names=['','美/加/墨/澳/新','欧洲','日/韩/泰/东南亚'];var est=Math.round(w*p);document.getElementById('price').textContent='¥'+est;document.getElementById('detail').textContent='档'+t+'（'+names[t]+'）· '+w+'kg × ¥'+p+'/kg · 双清包税门到门 · 10-15 个工作日';document.getElementById('result').classList.add('show')}</script>
+        <script>function calc(){var w=parseFloat(document.getElementById('weight').value);var t=parseInt(document.getElementById('tier').value);if(!w||w<20){document.getElementById('price').textContent='—';document.getElementById('detail').textContent='最低起运 21kg，不足 21kg 不予收寄';document.getElementById('result').classList.add('show');return;}var p20={1:100,2:90,3:80}[t];var p100={1:90,2:80,3:70}[t];var p=w<100?p20:p100;var names=['','美/加/墨/澳/新','欧洲','日/韩/泰/东南亚'];var est=Math.round(w*p);document.getElementById('price').textContent='¥'+est;document.getElementById('detail').textContent='档'+t+'（'+names[t]+'）· '+w+'kg × ¥'+p+'/kg · 双清包税门到门 · 10-15 个工作日';document.getElementById('result').classList.add('show')}</script>
         <div class="tool-info">
           <h2>包税渠道计算规则（按 3 档国家）</h2>
-          <p><strong>最低起运 20kg：</strong>实重或体积重≥20kg 方可收寄；不足 20kg 不予出运。<br>
+          <p><strong>最低起运 21kg：</strong>实重或体积重≥21kg 方可收寄；不足 21kg 不予出运。<br>
           <strong>价格（包税双清门到门）：</strong><br>
-          · 档1（美/加/墨/澳/新）：20-99kg ¥100/kg，100kg+ ¥90/kg<br>
-          · 档2（欧洲）：20-99kg ¥90/kg，100kg+ ¥80/kg<br>
-          · 档3（日/韩/泰/新/菲/台/马）：20-99kg ¥80/kg，100kg+ ¥70/kg<br>
+          · 档1（美/加/墨/澳/新）：21-99kg ¥100/kg，100kg+ ¥90/kg<br>
+          · 档2（欧洲）：21-99kg ¥90/kg，100kg+ ¥80/kg<br>
+          · 档3（日/韩/泰/新/菲/台/马）：21-99kg ¥80/kg，100kg+ ¥70/kg<br>
           <strong>清关费：</strong>含 100元申报手续费（双清包税门到门）。<br>
           <strong>计算公式：</strong>整票 1KG 取整进位；计费重量 = max(实际重, 材积重)；材积重 = L×W×H(cm) ÷ 5000。<br>
           <strong>超规附加：</strong>单件 &gt; 25KG 或单边 &gt; 120CM 或周长 &gt; 266CM，有附加费。</p>
@@ -140,11 +140,11 @@ gtag('config', 'G-DJGPMS9MOB');
           <h2>运费参考价格表</h2>
           <p>空运专线：¥100/kg 起，10-15 个工作日<br>国际快递(FedEx/UPS/DHL)：$10-25/lb，3-5天<br>华人快递集运：¥100/kg 起，10-15 个工作日</p>
           <h2>怎么寄最省钱？</h2>
-          <p>① 凑重寄：20kg 以上单价更低，凑够 20kg 再寄最划算；② 不急用走集运，急用走国际快递空运。</p>
+          <p>① 凑重寄：21kg 以上单价更低，凑够 21kg 再寄最划算；② 不急用走集运，急用走国际快递空运。</p>
         </div>
   </div>
   
-  <section style="max-width:1100px;margin:40px auto;padding:0 24px"><h2 style="font-size:22px;font-weight:700;margin-bottom:16px">常见问题</h2><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">运费怎么算？</h3><p style="margin:0;color:#64748B;line-height:1.7">选出发地档位（美加澳/欧洲/日韩东南亚）和重量，自动算双清包税总价。最低起运 20kg。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">最低起运多少？</h3><p style="margin:0;color:#64748B;line-height:1.7">最低 20kg（实重或体积重≥20kg 方可收寄），不足 20kg 不予出运。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">怎么用运费计算器？</h3><p style="margin:0;color:#64748B;line-height:1.7">选出发地档位 → 输入重量（kg）→ 自动出总价。重量 <20kg 会提示不予收寄。</p></div></section>
+  <section style="max-width:1100px;margin:40px auto;padding:0 24px"><h2 style="font-size:22px;font-weight:700;margin-bottom:16px">常见问题</h2><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">运费怎么算？</h3><p style="margin:0;color:#64748B;line-height:1.7">选出发地档位（美加澳/欧洲/日韩东南亚）和重量，自动算双清包税总价。最低起运 21kg。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">最低起运多少？</h3><p style="margin:0;color:#64748B;line-height:1.7">最低 21kg（实重或体积重≥21kg 方可收寄），不足 21kg 不予出运。</p></div><div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin-bottom:10px"><h3 style="font-size:15px;font-weight:600;margin:0 0 6px">怎么用运费计算器？</h3><p style="margin:0;color:#64748B;line-height:1.7">选出发地档位 → 输入重量（kg）→ 自动出总价。重量 <21kg 会提示不予收寄。</p></div></section>
   <footer class="footer">
     <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px">
       <div><h4>速豹国际物流</h4><p>美国寄中国专线物流专家</p></div>
